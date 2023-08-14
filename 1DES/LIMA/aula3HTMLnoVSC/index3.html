@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <fieldset>
+        <legend>Dados pessoais:</legend>
+        <label>Nome:</label>
+        <input type="text"><br>
+        <label>Endereço:</label>
+        <input type="text"><br>
+        <label>Cidade:</label>
+        <input type="text"><br>
+        <label>Estado:</label>
+        <select>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select><br>
+    </fieldset>
+    <fieldset>
+        <legend>Dados profissionais</legend>
+        <label>Natureza do cargo</label><br>
+        <input type="radio" name="cargo">Gerência
+        <input type="radio" name="cargo">Financeiro
+        <input type="radio" name="cargo">Recepção
+        <input type="radio" name="cargo">Administrativo
+        <input type="radio" name="cargo">Jurídico<br>
+        <br>
+        <label>Área de interesse</label><br>
+        <input type="checkbox" name="interesse">Computação
+        <input type="checkbox" name="interesse">Biologia
+        <input type="checkbox" name="interesse">Meio ambiente
+        <input type="checkbox" name="interesse">Engenharia
+        <input type="checkbox" name="interesse">História<br>
+        <br>
+        <label>Mini-currículo:</label>
+        <textarea rows="10" cols="50"></textarea>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</body>
+</html>
