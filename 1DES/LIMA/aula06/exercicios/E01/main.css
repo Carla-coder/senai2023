@@ -1,0 +1,16 @@
+.side-list {
+    display: flex;
+}
+
+.side-list li {
+    margin: 10px;
+}
+
+.side-list-style {
+    display: flex;
+    list-style: none;
+}
+
+.side-list-style li {
+    margin: 10px;
+}

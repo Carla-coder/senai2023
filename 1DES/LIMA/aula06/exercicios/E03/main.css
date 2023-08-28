@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+}
+
+.red {
+    width: 100vw;
+    height: 33.33%;
+    background-color: red;
+}
+
+.green {
+    width: 100vw;
+    height: 33.33%;
+    background-color: green;
+}
+
+.blue {
+    width: 100vw;
+    height: 33.33%;
+    background-color: blue;
+}

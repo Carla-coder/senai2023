@@ -1,0 +1,32 @@
+.red {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: red;
+}
+
+.green {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: green;
+}
+
+.blue {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: blue;
+}
+
+.fc div {
+    margin: 10px;
+}
+
+.sc {
+    display: flex;
+}
+
+.sc div {
+    margin: 10px;
+}
