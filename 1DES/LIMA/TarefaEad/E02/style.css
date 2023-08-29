@@ -1,0 +1,31 @@
+body {
+    margin: 150px;
+}
+.linha1 {
+    display: flex;
+}
+.linha1 h3{
+    margin: 20px;
+    width: 15vw;
+}
+.linha2 {
+    display: flex;
+}
+.linha2 p{
+    margin: 20px;
+    width: 15vw;
+}
+.linha3 {
+    display: flex;
+}
+.linha3 p{
+    margin: 20px;
+    width: 15vw;
+}
+.linha4 {
+    display: flex;
+}
+.linha4 p{
+    margin: 20px;
+    width: 15vw;
+}

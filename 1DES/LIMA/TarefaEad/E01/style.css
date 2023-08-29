@@ -1,0 +1,12 @@
+.item{
+    display:flex;
+}
+.item li{
+    margin:10px;
+}
+.item2{
+    display:flex;
+}
+.item2 p{
+    margin:10px;
+}

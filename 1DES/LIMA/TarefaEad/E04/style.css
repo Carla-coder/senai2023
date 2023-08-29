@@ -1,0 +1,30 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vw;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+}
+.red {
+    background-color: red;
+    width: 500px;
+    height: 1000px;
+}
+.green {
+    background-color: green;
+    width: 500px;
+    height: 1000px;
+}
+.blue {
+    background-color: blue;
+    width: 500px;
+    height: 1000px;
+}
