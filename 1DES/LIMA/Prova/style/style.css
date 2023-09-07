@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;0,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+:root{
+    --rx: #673AB7;
+    --f: #FFFFFF;
+    --cinza: #252525;
+    --amarelo: #FFC107;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    background: var(--rx);
+    padding: 20px;
+    font-size: 1.2rem;
+    color: var(--f);
+}
+
+header div span{
+    margin: 0 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 1.5rem;
+    background: var(--cinza);
+    color: var(--f);
+}
+
+nav span{
+    color: var(--amarelo);
+}
+
+.banner{
+    background-image: url(../img/banner.jpg);
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255, .6);
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.banner div span input{
+    height: 30px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.banner div img{
+    height: 30px;
+}
+
+main{
+    height: 65vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cinza);
+    color: var(--f);
+}
+
+main img{
+    height: 500px;
+    border-radius: 100px 0 100px 0;
+    margin-right: 50px;
+    border: 3px solid var(--amarelo)
+}
+
+main div{
+    height: 400px;
+}
+
+main h1{
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+main input{
+    margin-top: 50px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--amarelo);
+    font-size: 1.5rem;
+}
