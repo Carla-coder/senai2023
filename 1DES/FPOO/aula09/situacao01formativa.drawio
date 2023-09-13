@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2023-08-30T11:44:28.417Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="PyRmLjyg_wE122cI_Hh_" version="21.7.0" type="device">
+  <diagram name="Página-1" id="MNRTLmwZ9HYnu4i7Lnxk">
+    <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Dbd88kjXFwpqXqnzptqf-2" target="Dbd88kjXFwpqXqnzptqf-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-2" value="Início" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="364" y="10" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dbd88kjXFwpqXqnzptqf-3" target="Dbd88kjXFwpqXqnzptqf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-3" value="Total" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="364" y="100" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.556;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dbd88kjXFwpqXqnzptqf-4" target="Dbd88kjXFwpqXqnzptqf-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-4" value="Digite o total de doadores" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="349" y="180" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Dbd88kjXFwpqXqnzptqf-5" target="Dbd88kjXFwpqXqnzptqf-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-5" value="&lt;br&gt;Total" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;" vertex="1" parent="1">
+          <mxGeometry x="364" y="270" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="416" y="450" as="sourcePoint" />
+            <mxPoint x="411" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-15" value="Nome[total]&lt;br&gt;Idade[total]&lt;br&gt;Sexo[total]&lt;br&gt;Dias[total]&lt;br&gt;i = 0" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="364" y="361" width="100" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-17" value="i &amp;lt; total" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="372.5" y="560" width="79" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-18" value="i++" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="770" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-19" value="&lt;br&gt;Nome[i]&lt;br&gt;Idade[i}&lt;br&gt;Sexo[i]&lt;br&gt;Dias[i]" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="545" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="540" as="sourcePoint" />
+            <mxPoint x="412" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="412" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-20" value="&amp;nbsp;nome, idade, sexo &#39;M&#39; ou &#39;F&#39;, dias sem doar" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="344" y="480" width="136" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dbd88kjXFwpqXqnzptqf-33" value="idade[i] &amp;gt;= 16 &amp;amp;&amp;amp;&lt;br&gt;idade[i[ &amp;lt;= 69" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="490.5" y="640" width="119.5" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
