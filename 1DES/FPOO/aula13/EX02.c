@@ -1,3 +1,6 @@
+/* "Crie outro programa deve ler o arquivo anterior e mostrar na tela o conteúdo do arquivo 
+e gravar em um arquivo chamado "resultado.txt" média dos números contidos no arquivo.*/
+
 #include <stdio.h>
 
 int main() {
