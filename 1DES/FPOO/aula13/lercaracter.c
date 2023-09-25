@@ -7,12 +7,12 @@ int main(){
 	
 	/*  aqui o arquivo lê caracter por caracter*/
 	
-	arquivo = fopen("arquivo.txt", "r");
+	arquivo = fopen("arquivo.txt", "r"); // "r" leitura
 	if(arquivo == NULL)
 		printf("Erro, não foi possivel abrir o arquivo\n");
 	else{
 		while((c=fgetc(arquivo)) != EOF)
-		putchar(c);
+		putchar(c); // coloca o caracter c na tela
 	}
 	fclose(arquivo);
 	return 0;

@@ -1,4 +1,5 @@
-/* "Crie um programa que leia um arquivo de texto chamado "dados.txt" contendo o texto a seguir:1 2 3 4 5 6 7 8 9 10 */
+/* "Crie um programa que leia um arquivo de texto chamado "dados.txt" contendo o texto a seguir:1 2 3 4 5 6 7 8 9 10
+O programa deve ler o arquivo e mostrar na tela o conteúdo do arquivo e a soma dos números contidos no arquivo.  */
 
 #include <stdio.h>
 
