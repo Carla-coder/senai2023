@@ -1,3 +1,6 @@
+/* Resultado do Ex03, aqui o programa leu o número de descendentes (4) e o que cada descendente fez com cada porta. 
+O correto na interpretação do texto é descobrir quais portas foram abertas e fechadas */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

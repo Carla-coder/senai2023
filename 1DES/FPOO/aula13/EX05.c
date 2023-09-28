@@ -18,7 +18,7 @@ int main() {
 
         double volume = (double)F / (N * 50.0); // Cálculo do volume em litros
 
-        printf("%.2lf\n", volume); // Imprime o volume com duas casas decimais
+        printf("%.2f\n", volume); // Imprime o volume com duas casas decimais
     }
 
     // Fecha o arquivo após o uso

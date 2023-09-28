@@ -1,5 +1,5 @@
-/* "Crie outro programa deve ler o arquivo anterior e mostrar na tela o conteúdo do arquivo 
-e gravar em um arquivo chamado "resultado.txt" média dos números contidos no arquivo.*/
+/* "Crie outro programa que leia o arquivo anterior e mostre na tela o conteúdo do arquivo 
+Grave um arquivo chamado "resultado.txt" para a  média dos números contidos no arquivo.*/
 
 #include <stdio.h>
 
@@ -8,7 +8,7 @@ int main() {
     FILE *resultado;
     int numero;
     int soma = 0;
-    int contador = 0;
+    int contador = 0; 
     float media;
 
     // Abre o arquivo "dados.txt" para leitura
@@ -38,7 +38,7 @@ int main() {
 
     // Calcula a média
     if (contador > 0) {
-        media = (float)soma / contador;
+        media = soma / contador;
     } else {
         media = 0.0;
     }
@@ -47,7 +47,7 @@ int main() {
     fclose(arquivo);
 
     // Escreve a média no arquivo "resultado.txt"
-    fprintf(resultado, "Media dos numeros: %.2f\n", media);
+    fprintf(resultado, "Media dos numeros: %.1f\n", media);
 
     // Fecha o arquivo "resultado.txt"
     fclose(resultado);
