@@ -1,4 +1,4 @@
-# Aula14 - Funcamentos de Estrutura de Dados
+# Aula14 - Fundamentos de Estrutura de Dados
 - PILHA
 - FILA
 - LISTA
