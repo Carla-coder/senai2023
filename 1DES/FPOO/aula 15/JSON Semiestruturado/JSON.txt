@@ -1,0 +1,30 @@
+JSON (JavaScript Object Notation) é um formato de intercâmbio de dados leve e de fácil leitura que é usado para transmitir dados entre um servidor e um cliente, ou entre diferentes partes de uma aplicação. Ele foi originalmente derivado da notação de objeto JavaScript, mas é um formato independente de linguagem e é amplamente utilizado em desenvolvimento de software.
+
+As principais características do JSON incluem:
+
+Leitura Fácil: Os dados em JSON são organizados em uma estrutura de pares de chave-valor, o que o torna fácil de ler e entender tanto para humanos quanto para máquinas.
+
+Formato de Texto: JSON é um formato de texto simples, o que o torna adequado para comunicação entre sistemas em diferentes plataformas, independentemente da linguagem de programação que estão usando.
+
+Independência de Linguagem: JSON é independente de linguagem, o que significa que pode ser usado em qualquer linguagem de programação que ofereça suporte a análise de JSON.
+
+Suporte a Tipos de Dados: JSON suporta tipos de dados comuns, como números, strings, booleanos, arrays e objetos. Isso o torna versátil o suficiente para representar uma ampla variedade de informações.
+
+Facilidade de Análise e Geração: A maioria das linguagens de programação possui bibliotecas ou módulos que facilitam a análise (parse) de dados JSON em estruturas de dados nativas e a geração de JSON a partir de estruturas de dados.
+
+Amplamente Utilizado na Web: JSON é amplamente utilizado na web para troca de dados entre um servidor e um cliente, e é comumente usado em APIs RESTful para enviar e receber informações.
+
+Extensível: Você pode criar estruturas de dados JSON personalizadas e aninhar objetos dentro de objetos para representar dados complexos.
+
+Legibilidade para Humanos: A legibilidade é uma das principais vantagens do JSON. É fácil de ler e entender, mesmo quando os dados estão formatados em uma única linha.
+
+{
+    "nome": "João",
+    "idade": 30,
+    "cidade": "São Paulo",
+    "casado": false,
+    "interesses": ["programação", "viagens", "música"]
+}
+
+Neste exemplo, temos um objeto JSON com pares de chave-valor que representam informações sobre uma pessoa.
+ O JSON é usado em muitos contextos, desde configuração de aplicativos até troca de dados em APIs da web.
