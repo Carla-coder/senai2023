@@ -1,0 +1,22 @@
+<pessoas>
+    <pessoa>
+        <id>1</id>
+        <nome>Ana Maria</nome>
+        <nascimento>2000-01-01</nascimento>
+    </pessoa>
+    <pessoa>
+        <id>2</id>
+        <nome>Maria silva</nome>
+        <nascimento>2002-03-18</nascimento>
+    </pessoa>
+    <pessoa>
+        <id>3</id>
+        <nome>Marcos Paulo</nome>
+        <nascimento>2003-04-25</nascimento>
+    </pessoa>
+    <pessoa>
+        <id>4</id>
+        <nome>Mariana Lima</nome>
+        <nascimento>2001-01-13</nascimento>
+    </pessoa>
+</pessoas>

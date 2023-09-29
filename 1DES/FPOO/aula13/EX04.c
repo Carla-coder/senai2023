@@ -1,3 +1,5 @@
+/* Resultado do exercicio Esquerda, Volvér!!! */
+
 #include <stdio.h>
 
 int main() {
