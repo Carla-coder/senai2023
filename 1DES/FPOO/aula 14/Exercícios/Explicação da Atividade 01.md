@@ -83,7 +83,7 @@ int main() {
 }
 main é a função principal do programa. Dentro dela, há um loop while (1) que cria um menu interativo para o usuário. O usuário pode escolher entre opções para inserir elementos na pilha, remover elementos da pilha, mostrar a pilha ou sair do programa. O programa utiliza a estrutura switch para executar a ação correspondente à opção escolhida pelo usuário.
 
-Espero que esta explicação ajude a entender o código em detalhes. Se você tiver alguma dúvida específica sobre alguma parte do código, sinta-se à vontade para perguntar!
+
 
 
 
