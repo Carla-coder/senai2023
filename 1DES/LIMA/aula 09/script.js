@@ -46,6 +46,10 @@
 // === igualdade restrita (valor e tipo)
 // !== diferença restrita (valor e tipo)
 
+// var a = 10;
+// var b = '10';
+// console.log(a === b)
+
 /* 1.Desenvolva um programa que leia três variáveis (a, b, c) e resolva a expressão: ( a + b ) / c.
 // var a = 20
 // var b = 40
@@ -89,18 +93,20 @@
 // console.log(data)
 // console.log(anoCompleto, horaCompleta)
 
-// Math.ceil() // arredonda para cima os valores
-// Math.floor() // arredonda para baixo os valores
-// Math.round() // arredonda para o mais próximo de acordo com a casa decimal
+// Funções com números
 
-// var n = 10
+// Math.ceil(10.1) // arredonda para cima os valores
+// Math.floor(10.9) // arredonda para baixo os valores
+// Math.round(10.5) // arredonda para o mais próximo de acordo com a casa decimal
+
+// var n = '10'
 
 // console.log(Math.ceil(10.1))
 // console.log(Math.floor(10.9))
 // console.log(Math.round(10.4))
 
-// Number.parseInt() // converte uma string para inteiro
-// Number.parseFloat() // converte uma string para float
+// Number.parseInt(n) // converte uma string para inteiro
+// Number.parseFloat(n) // converte uma string para float
 
 // console.log(n, Number.parseFloat(n))
 
@@ -117,6 +123,8 @@
 //     default :
 //         break;
 // }
+
+// Laço de repetição
 
 // for( let i = 0; i < 10; i++){
 //     console.log(i);
@@ -141,13 +149,15 @@
 //     console.log(item);
 // }
 
-// function nome() { //  exemplo de como declarar função
+// Declaração de Função
+
+// function nome(nome) { //  exemplo de como declarar função
         console.log("Executando a função nome");
 }
-nome();
+nome('Carla');
 
 *****************************************************************************************************************************
-// fazer os 2 primeiros exercicios da lista 2 (aula 04) e os dois primeiros da lista 3 (aula 06)
+// Fazer os 2 primeiros exercicios da lista 2 (aula 04) e os dois primeiros da lista 3 (aula 06)
 // Lista 2 (aula 04) Ex 01 e 02
 /* 1.Desenvolva um programa que leia o preço de um produto e se o preço for maior do que 1000 reais aplique um desconto de 8%. 
 Mostre o preço final*/
