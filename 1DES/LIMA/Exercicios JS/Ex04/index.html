@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Pontos de Futebol</title>
+</head>
+<body>
+    <h1>Calculadora de Pontos de Futebol</h1>
+
+    <label for="nomeTime">Nome do Time: </label>
+    <input type="text" id="nomeTime" placeholder="Digite o nome do time"><br>
+
+    <label for="vitorias">Número de Vitórias: </label>
+    <input type="number" id="vitorias" placeholder="Digite o número de vitórias"><br>
+
+    <label for="empates">Número de Empates: </label>
+    <input type="number" id="empates" placeholder="Digite o número de empates"><br>
+
+    <button onclick="calcularPontos()">Calcular Pontos</button>
+
+    <p>Total de Pontos do time <span id="nomeTimeResultado"></span>: <span id="totalPontos"></span> pontos</p>
+
+</body>
+    <script src="script.js"></script>
+</html>
