@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+div.triangulo {
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+th, td {
+    width: 33%;
+}
+
+
+

@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4fabc7;
+    color: #111010;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    margin: 2rem;
+    padding: 1rem;
+    border: 2px solid #0f0f0f;
+    border-radius: 5px;
+}
+
+div.paciente {
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #111010;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+th {
+    background-color: #837c85;
+    color: #0f0f0f;
+}
+
+th, td {
+    width: 33%;
+}
