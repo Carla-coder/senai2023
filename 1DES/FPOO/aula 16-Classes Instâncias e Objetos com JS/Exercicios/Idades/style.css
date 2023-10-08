@@ -80,3 +80,8 @@ table tr td {
     padding: 10px;
     text-align: center;
 }
+
+/* Estilo para a coluna Classificação */
+th:nth-child(5) {
+    background-color: #333; 
+}

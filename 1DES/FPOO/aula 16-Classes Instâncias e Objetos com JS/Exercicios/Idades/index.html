@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas</title>
     <link rel="stylesheet" href="style.css">
-    <title>Orientação a Objetos</title>
 </head>
+<body>
+    <h1>Cadastro de Pessoas</h1>
+    <main id="pessoas">
+        
+        <form id="form-cadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
 
-<body onload="atualizaTabela()">
-    <header>
-        <h1>Inserindo e processando dados em uma tabela</h1>
-        <form id="novaPessoa">
-            <input type="text" name="nome" placeholder="Nome completo" required>
-            <input type="date" name="nascimento" required>
-            <select name="sexo">
-                <option value="F">Feminino</option>
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" required>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" required>
                 <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
             </select>
+
             <input type="submit" value="Inserir">
         </form>
-    </header>
-    <main>
+
+        <h2>Lista de Pessoas</h2>
         <table>
             <thead>
-                <tbody>
                 <tr>
                     <th>Nome</th>
-                    <th>Nascimento</th>
+                    <th>Data de Nascimento</th>
                     <th>Sexo</th>
                     <th>Idade</th>
-                    <th>Classificação</th>
+                    <th>Classificação</th> <!-- Adicionando a coluna Classificação -->
                 </tr>
-                </tbody>
             </thead>
-            <tbody id="corpoTabela"></tbody>
+            <tbody id="tabela-pessoas"></tbody>
         </table>
     </main>
+    <script src="pessoas.js"></script>
 </body>
-<script src="pessoas.js"></script>
-
 </html>
