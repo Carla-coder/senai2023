@@ -1,4 +1,4 @@
-/* 2.2 Crie um programa que leia o arquivo CSV anterior e acrescente uma coluna chamada Idade com a idade calculada a partir da data de nascimento,
+/* 2. Crie um programa que leia o arquivo CSV anterior e acrescente uma coluna chamada Idade com a idade calculada a partir da data de nascimento,
  e salve os dados em um novo arquivo CSV chamado saida.csv.
   O programa contém erros!!!! */
 
