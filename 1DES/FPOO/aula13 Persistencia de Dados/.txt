@@ -1,0 +1,15 @@
+// Imprime as portas abertas
+        int primeiraPorta = 1;
+        for (i = 0; i < N; i++) {
+            if (portas_abertas[i]) {
+                if (!primeiraPorta) {
+                    fprintf(outputFile, " ");
+                }
+                fprintf(outputFile, "%d", i + 1);
+                primeiraPorta = 0;
+            }
+        }
+        fprintf(outputFile, "\n");
+
+        free(portas_abertas);
+    }
