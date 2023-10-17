@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Pagamento</title>
+</head>
+<body>
+
+    <h1>Informações de Pagamento</h1>
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome">
+    </div>
+    <div>
+        <label for="salario">Salário:</label>
+        <input type="number" id="salario" placeholder="Salário">
+      
+    </div>
+    <button id="calcular">Calcular</button>
+    <div id="result"></div>
+    
+    <script>
+        class Pagamento {
+            constructor(nome, salario) {
+                this.nome = nome;
+                this.salario = salario;
+                this.salarioBase = this.salario - this.inss();
+                this.salarioLiquido = this.salarioBase - this.irrf();
+            }
+
+            inss() {
+                if (this.salario < 1903.99)
+                    return 0;
+                else if (this.salario < 2826.66)
+                    return this.salario * 0.075 - 142.8;
+                else if (this.salario < 3751.06)
+                    return this.salario * 0.15 - 354.8;
+                else if (this.salario < 4664.69)
+                    return this.salario * 0.225 - 636.13;
+                else
+                    return this.salario * 0.275 - 869.36;
+            }
+
+            irrf() {
+                if (this.salario < 1903.99)
+                    return 0;
+                else if (this.salario < 2826.66)
+                    return this.salario * 0.075 - 142.8;
+                else if (this.salario < 3751.06)
+                    return this.salario * 0.15 - 354.8;
+                else if (this.salario < 4664.69)
+                    return this.salario * 0.225 - 636.13;
+                else
+                    return this.salario * 0.275 - 869.36;
+            }
+        }
+
+    document.getElementById("calcular").addEventListener("click", function () {
+    const nome = document.getElementById("nome").value;
+    const salario = parseFloat(document.getElementById("salario").value);
+    if (nome && !isNaN(salario)) {
+    //const pgto1 = new Pagamento("João", 2689.00); // Valor qualquer de salário
+    const result = `Nome: ${pgto1.nome}<br>Salário: ${pgto1.salario}<br>Salário Base: ${pgto1.salarioBase}<br>Salário Líquido: ${pgto1.salarioLiquido}`;
+    document.getElementById("result").innerHTML = result;
+    } else {
+                alert("Por favor, preencha o nome e o salário corretamente.");
+            }
+        });
+    </script>
+
+</body>
+</html>

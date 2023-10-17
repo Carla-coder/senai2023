@@ -11,7 +11,7 @@ function inss(salario) {
         return 1051.05;
 }
 
-function inss(salario) {
+function irrf(salario) {
     if (salario < 1903,99)
         return 0;
     else if (salario < 2826,66)
@@ -24,34 +24,80 @@ function inss(salario) {
         return salario * 27.5 / 100 - 869.36;
 }
 
-let salario = 1000;
-let inss = inss(salario);
-let salarioBase = salario - inss;
-let irrf = irrf(salarioBase);
-let salarioLiquido = salarioBase - irrf;
+//let salario = 1000;
+//let inss = inss(salario);
+//let salarioBase = salario - inss;
+//let irrf = irrf(salarioBase);
+//let salarioLiquido = salarioBase - irrf;
 
-console.log("Salário:" + salario);
-console.log("INSS:" + inss);
-console.log("Salário Base:" + salarioBase);
-console.log("IRFF:" + irrf);
-console.log("Salário Líquido:" + salarioLiquido);
+//console.log("Salário:" + salario);
+//console.log("INSS:" + inss);
+//console.log("Salário Base:" + salarioBase);
+//console.log("IRFF:" + irrf);
+//console.log("Salário Líquido:" + salarioLiquido);
 
 class Pagamento {
-    constructor(salario, salarioBase, salarioLiquido){
+
+    //Método Construtor
+    constructor(nome, salario){
+    this.nome = nome;
     this.salario = salario;
-    this.salarioBase = salarioBase;
-    this.salarioLiquido = salarioLiquido;
+    this.salarioBase = (this.salarioBase - this.inss()).toFixed(2);
+    this.salarioLiquido = (this.salarioBase - this.irrf()).toFixed(2);
+
     }
 
-    total(){
-        return this.salarioBase - this.salarioLiquido;
+    inss() {
+        if (this.salario < 1903,99)
+            return 0;
+        else if (this.salario < 2826,66)
+            return this.salario * 7.5 / 100 - 142.8;
+        else if (this.salario < 3751.06)
+            return this.salario * 15 / 100 - 354.8;
+        else if (this.salario < 4664.69)
+            return this.salario * 22.5 / 100 - 636.13;
+        else
+            return this.salario * 27.5 / 100 - 869.36;
     }
+
+     irrf() {
+        if (this.salario < 1903,99)
+            return 0;
+        else if (this.salario < 2826,66)
+            return this.salario * 7.5 / 100 - 142.8;
+        else if (this.salario < 3751.06)
+            return this.salario * 15 / 100 - 354.8;
+        else if (this.salario < 4664.69)
+            return this.salario * 22.5 / 100 - 636.13;
+        else
+            return this.salario * 27.5 / 100 - 869.36;
+    }
+
 }
 
+document.getElementById("calcular").addEventListener("click", function () {
+    const nome = document.getElementById("nome").value;
+    const salario = parseFloat(document.getElementById("salario").value);
+    if (nome && !isNaN(salario)) {
+    const pgto1 = new Pagamento("João", 2689.00); // Valor qualquer de salário
+    const result = `Nome: ${pgto1.nome}<br>Salário: ${pgto1.salario}<br>Salário Base: ${pgto1.salarioBase}<br>Salário Líquido: ${pgto1.salarioLiquido}`;
+    document.getElementById("result").innerHTML = result;
+    } else {
+                alert("Por favor, preencha o nome e o salário corretamente.");
+            }
+        });
 
-function irrf(salario) {console.log("Salário:" + salario);
-    return 0;console.log("Salário:" + salario);
 
-console.log(inss(3500));
 
-}
+
+    
+//total(){
+        //return this.salarioBase - this.salarioLiquido;
+   // }
+
+//function irrf(salario) {console.log("Salário:" + salario);
+   // return 0;console.log("Salário:" + salario);
+
+//console.log(inss(3500));
+
+//}
