@@ -1,4 +1,0 @@
-Nome: Mariana, Media: 7.67, Status: Aprovado
-Nome: Roberta, Media: 10.00, Status: Aprovado
-Nome: Genoveva, Media: 5.00, Status: Aprovado
-Nome: Jussara, Media: 4.00, Status: Reprovado
