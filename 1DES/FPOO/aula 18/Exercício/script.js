@@ -75,11 +75,11 @@ class Pagamento {
 
 }
 
-document.getElementById("calcular").addEventListener("click", function () {
+    document.getElementById("calcular").addEventListener("click", function () {
     const nome = document.getElementById("nome").value;
     const salario = parseFloat(document.getElementById("salario").value);
     if (nome && !isNaN(salario)) {
-    const pgto1 = new Pagamento("João", 2689.00); // Valor qualquer de salário
+    //const pgto1 = new Pagamento("João", 2689); // Valor qualquer de salário
     const result = `Nome: ${pgto1.nome}<br>Salário: ${pgto1.salario}<br>Salário Base: ${pgto1.salarioBase}<br>Salário Líquido: ${pgto1.salarioLiquido}`;
     document.getElementById("result").innerHTML = result;
     } else {
@@ -88,9 +88,6 @@ document.getElementById("calcular").addEventListener("click", function () {
         });
 
 
-
-
-    
 //total(){
         //return this.salarioBase - this.salarioLiquido;
    // }
