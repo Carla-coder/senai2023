@@ -48,9 +48,9 @@ class Pagamento {
     }
 
     inss() {
-        if (this.salario < 1903,99)
+        if (this.salario < 1903.99)
             return 0;
-        else if (this.salario < 2826,66)
+        else if (this.salario < 2826.66)
             return this.salario * 7.5 / 100 - 142.8;
         else if (this.salario < 3751.06)
             return this.salario * 15 / 100 - 354.8;
@@ -61,9 +61,9 @@ class Pagamento {
     }
 
      irrf() {
-        if (this.salario < 1903,99)
+        if (this.salario < 1903.99)
             return 0;
-        else if (this.salario < 2826,66)
+        else if (this.salario < 2826.66)
             return this.salario * 7.5 / 100 - 142.8;
         else if (this.salario < 3751.06)
             return this.salario * 15 / 100 - 354.8;
@@ -74,18 +74,20 @@ class Pagamento {
     }
 
 }
-
-    document.getElementById("calcular").addEventListener("click", function () {
-    const nome = document.getElementById("nome").value;
-    const salario = parseFloat(document.getElementById("salario").value);
-    if (nome && !isNaN(salario)) {
-    //const pgto1 = new Pagamento("João", 2689); // Valor qualquer de salário
-    const result = `Nome: ${pgto1.nome}<br>Salário: ${pgto1.salario}<br>Salário Base: ${pgto1.salarioBase}<br>Salário Líquido: ${pgto1.salarioLiquido}`;
-    document.getElementById("result").innerHTML = result;
-    } else {
+        
+        document.getElementById("calcular").addEventListener("click", function () {
+        const nome = document.getElementById("nome").value;
+        const salario = parseFloat(document.getElementById("salario").value);
+        if (nome && !isNaN(salario)) {
+        //const pgto1 = new Pagamento("João", 2689); // Valor qualquer de salário
+        const pgto = new Pagamento(nome, salario);
+        const result = `Nome: ${pgto.nome}<br>Salário: ${pgto.salario}<br>Salário Base: ${pgto.salarioBase.toFixed(2)}<br>Salário Líquido: ${pgto.salarioLiquido.toFixed(2)}`;
+        document.getElementById("result").innerHTML = result;
+        } else {
                 alert("Por favor, preencha o nome e o salário corretamente.");
             }
         });
+    
 
 
 //total(){
