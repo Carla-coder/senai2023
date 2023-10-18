@@ -1,3 +1,15 @@
+.card{
+    width: 250px;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px rgba(0,0,0 .5);
+}
+
+.card h1{
+    text-align: center;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -33,7 +45,7 @@ input[type="number"] {
 
 button {
     background-color: #007BFF;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
