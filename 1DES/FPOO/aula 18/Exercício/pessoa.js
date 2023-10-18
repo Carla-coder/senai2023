@@ -74,19 +74,21 @@ class Pagamento {
     }
 
 }
+
+        const pgto1 = new Pagamento("João", 2689);
         
-        document.getElementById("calcular").addEventListener("click", function () {
-        const nome = document.getElementById("nome").value;
-        const salario = parseFloat(document.getElementById("salario").value);
-        if (nome && !isNaN(salario)) {
-        //const pgto1 = new Pagamento("João", 2689); // Valor qualquer de salário
-        const pgto = new Pagamento(nome, salario);
-        const result = `Nome: ${pgto.nome}<br>Salário: ${pgto.salario}<br>Salário Base: ${pgto.salarioBase.toFixed(2)}<br>Salário Líquido: ${pgto.salarioLiquido.toFixed(2)}`;
-        document.getElementById("result").innerHTML = result;
-        } else {
-                alert("Por favor, preencha o nome e o salário corretamente.");
-            }
-        });
+        // document.getElementById("calcular").addEventListener("click", function () {
+        // const nome = document.getElementById("nome").value;
+        // const salario = parseFloat(document.getElementById("salario").value);
+        // if (nome && !isNaN(salario)) {
+        // //const pgto1 = new Pagamento("João", 2689); // Valor qualquer de salário
+        // const pgto = new Pagamento(nome, salario);
+        // const result = `Nome: ${pgto.nome}<br>Salário: ${pgto.salario}<br>Salário Base: ${pgto.salarioBase.toFixed(2)}<br>Salário Líquido: ${pgto.salarioLiquido.toFixed(2)}`;
+        // document.getElementById("result").innerHTML = result;
+        // } else {
+        //         alert("Por favor, preencha o nome e o salário corretamente.");
+        //     }
+        // });
     
 
 
