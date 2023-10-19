@@ -22,3 +22,9 @@ function criarCard(){
         cards.appendChild(cardNew);
     })
 }
+document.addEventListener("click", function (e) {
+    if (e.target && e.target.classList.contains("btn-excluir")) {
+        const card = e.target.closest('.card');
+        card.remove(cardNew);
+    }
+})
