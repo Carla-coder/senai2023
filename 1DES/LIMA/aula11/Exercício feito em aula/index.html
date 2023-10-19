@@ -16,12 +16,15 @@
     </form>
     
     <div class="cards">
-            <div class="card model">
-            <h1 id="nomeValor"></h1>
-            <h4 id="salarioValor">1000</h4>
-            <h4 id="salarioBase">1000</h4>
-            <h4 id="salarioLiquido">1000</h4>
-            <button class="btn-excluir">Excluir</button>
+        <div class="card model">
+            <button id="btnDel" onclick="updateCard(this)">edit</button>
+            <button id="btnDel" onclick="deleteCard(this)">Excluir</button>
+            <h1 class="id model"></h1>
+            <h1 class="nomeValor"></h1>
+            <h4 class="salarioValor">1000</h4>
+            <h4 class="salarioBase">1000</h4>
+            <h4 class="salarioLiquido">1000</h4>
+            <!-- <button class="btn-excluir">Excluir</button> -->
         </div>
     </div>
     
