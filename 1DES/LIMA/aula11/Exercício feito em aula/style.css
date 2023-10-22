@@ -89,6 +89,11 @@ h1 {
     color: #333;
 }
 
+.model{
+    display: none;
+}
+
+
 #formPessoa {
     background-color:none;
     padding: 20px;
