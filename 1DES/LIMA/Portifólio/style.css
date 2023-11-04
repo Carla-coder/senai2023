@@ -161,6 +161,7 @@ section.topo-do-site .flex {
     color: white;
     font-size: 42px;
     line-height: 40px;
+    text-align: justify;
 }
 
 .txt-topo-site h1 span {
@@ -171,16 +172,17 @@ section.topo-do-site .flex {
 .txt-topo-site p {
     margin: 40px 0;
     color: white;
-
+    text-align: justify; 
 }
 
 .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-    width: 300px;
-    height: 290px;
+    /* width: 300px;
+    height: 290px; */
     border-radius: 100%;
-    border: 15px solid chartreuse;
+    border: 12px solid #00ff08;
+    background-image: linear-gradient(black,green,black,green);
 }
 
 @keyframes flutuar {
@@ -347,7 +349,7 @@ form input,form textarea {
 
 /* MUDA A COR DOS TEXTOS DENTRO DO FORMULÁRIO */
 form input::placeholder,form textarea::placeholder {
-    color: #00ff08;
+    color: white;
 }
 
 form textarea {
