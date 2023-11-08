@@ -28,7 +28,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00ff08;
+    background-color: #5d8aa8;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -36,17 +36,17 @@ body {
 }
 
 h2.título {
-    color: white;
+    color: #fdf5e6;
     font-size: 38px;
     text-align: center;
 }
 
 h2.título span {
-    color: #00ff08;
+    color: #5d8aa8;
 }
 
 button:hover,form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #00ff6a;
+    box-shadow: 0px 0px 8px #5d8aa8;
     transform: scale(1.05);
 }
 
@@ -84,7 +84,7 @@ header nav.menu-desktop ul li {
 
 /* ESTILO DO MENU MOBILE */
 btn-abrir-menu i {
-    color: #00ff08;
+    color: #5d8aa8;
     font-size: 40px;
 }
 
@@ -113,7 +113,7 @@ btn-abrir-menu i {
 }
 
 .menu-mobile .btn-fechar i {
-    color: #00ff08;
+    color: #5d8aa8;
     font-size: 30px;
 }
 
@@ -123,7 +123,7 @@ btn-abrir-menu i {
 }
 
 .menu-mobile nav ul li a {
-    color: white;
+    color: #fdf5e6;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
@@ -131,7 +131,7 @@ btn-abrir-menu i {
 }
 
 .menu-mobile nav ul li a:hover {
-    background-color: #00ff08;
+    background-color: #5d8aa8;
     color: #000;
 }
 
@@ -158,20 +158,20 @@ section.topo-do-site .flex {
 }
 
 .txt-topo-site h1 {
-    color: white;
+    color: #fdf5e6;
     font-size: 42px;
     line-height: 40px;
     text-align: justify;
 }
 
 .txt-topo-site h1 span {
-    color: #00ff08;
+    color: #5d8aa8;
 
 }
 
 .txt-topo-site p {
     margin: 40px 0;
-    color: white;
+    color: #fdf5e6;
     text-align: justify; 
 }
 
@@ -181,8 +181,8 @@ section.topo-do-site .flex {
     /* width: 300px;
     height: 290px; */
     border-radius: 100%;
-    border: 12px solid #00ff08;
-    background-image: linear-gradient(black,green,black,green);
+    border: 12px solid #c9a021;
+    background-image: linear-gradient(black,#5d8aa8,black,#5d8aa8);
 }
 
 @keyframes flutuar {
@@ -206,7 +206,7 @@ section.especialidades .flex {
 }
 
 .especialidades-box {
-    color: white;
+    color: #fdf5e6;
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
@@ -220,7 +220,7 @@ section.especialidades .flex {
 
 .especialidades-box i {
     font-size: 70px;
-    color: #00ff08;
+    color: #5d8aa8;
 }
 
 .especialidades-box h3 {
@@ -239,7 +239,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-    color: white;
+    color: #fdf5e6;
 }
 
 .sobre .txt-sobre h2 {
@@ -249,7 +249,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #00ff08;
+    color: #5d8aa8;
     display: block;
 }
 
@@ -264,7 +264,7 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #00ff08;
+    background-color: #5d8aa8;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -312,7 +312,7 @@ section.portifólio .flex {
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: white;
+    color: #fdf5e6;
     opacity: 0;
     transition: .5s;
 }
@@ -343,13 +343,13 @@ form input,form textarea {
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
-    color: white;
+    color: #fdf5e6;
     font-size: 18px;
 }
 
 /* MUDA A COR DOS TEXTOS DENTRO DO FORMULÁRIO */
 form input::placeholder,form textarea::placeholder {
-    color: white;
+    color: #fdf5e6;
 }
 
 form textarea {
@@ -364,7 +364,7 @@ form .btn-enviar {
 
 form .btn-enviar input[type=submit] {
     width: 120px;
-    background-color: #00ff08;
+    background-color: #5d8aa8;
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -387,16 +387,16 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid #00ff08;
+    border-top: 2px solid #5d8aa8;
 }
 
 footer .line-footer p i {
-    color: #00ff08;
+    color: #5d8aa8;
     font-size: 22px;
 }
 
 footer .line-footer p a {
-    color: white;
+    color: #fdf5e6;
 }
 
 @media screen and (max-width: 1020px) {
@@ -514,7 +514,7 @@ footer .line-footer p a {
         
 }
 
-.contador {
+/* .contador {
         text-align:center;
         color: white;
-    }
+    } */
