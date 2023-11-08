@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #161b1e;
     height: 100vh;
 }
 
@@ -181,7 +181,7 @@ section.topo-do-site .flex {
     /* width: 300px;
     height: 290px; */
     border-radius: 100%;
-    border: 12px solid #c9a021;
+    border: 12px solid #9a956b;
     background-image: linear-gradient(black,#5d8aa8,black,#5d8aa8);
 }
 
@@ -422,8 +422,7 @@ footer .line-footer p a {
     }
 
     /* CABEÇALHO */
-    .menu-desktop,
-    .btn-contato {
+    .menu-desktop, .btn-contato {
         display: none;
     }
 
