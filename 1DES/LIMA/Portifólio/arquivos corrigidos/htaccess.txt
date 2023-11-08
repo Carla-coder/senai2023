@@ -1,0 +1,5 @@
+
+# HTID:22307745: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+AddHandler application/x-httpd-lsphp .htm .html
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:22307745:

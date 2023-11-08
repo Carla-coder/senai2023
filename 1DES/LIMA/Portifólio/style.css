@@ -511,5 +511,10 @@ footer .line-footer p a {
         /* border-bottom: 2px solid #00ff08; */
         text-align: center;
     }
+        
 }
 
+.contador {
+        text-align:center;
+        color: white;
+    }
