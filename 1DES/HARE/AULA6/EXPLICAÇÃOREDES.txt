@@ -1,4 +1,6 @@
-EXERCÍCIO REDES (HARE AULA 06 - 09/11/2023)
+EXERCÍCIO REDES (HARE AULA 06 - 09/11/2023 - RENATO)
+
+Localizar os seguintes ítens (PROMPT DE COMANDO DO WINDOWS)
 
 IP: 186.238.4.130
 
@@ -16,11 +18,15 @@ TTL DA MÁQUINA: 64
 
 IP 0.0.0.0: RESERVADO PARA MÁQUINA QUE NÃO CONHECEM O SEU ENDEREÇO DE IP.
 
-IP 255.255.255.255: É UM IP RESERVADO PARA AS MÁQUINAS FAZEREM BROADCAST ( MENSAGEM QUE É ENVIADA PARA TODOS OS SISTEMAS DA REDE DE FORMA A MOSTRAR A DIFUSÃO).
+IP 255.255.255.255: É UM IP RESERVADO PARA AS MÁQUINAS FAZEREM BROADCAST => [FINAL .255 É O IP DA REDE INTEIRA] => ( MENSAGEM QUE É ENVIADA PARA TODOS OS SISTEMAS DA REDE DE FORMA A MOSTRAR A DIFUSÃO).
 
-IP 127.0 00: RESERVADO PARA AS FUNÇÕES DE LOOPBACK.
+IP 127.0 00: RESERVADO PARA AS FUNÇÕES DE LOOPBACK. => IP 127.0 01 (LOCALHOST) <=
+***************************************************************************************************************************************************************
+Exemplos de PORTAS ABERTAS (Listening)
+Comando netstat -an
 
-PORTAS ABERTAS (PORTIFÓFIO)
+Exemplo:(PORTIFÓFIO CARLA MOZENA - OPEN LIVE SERVER - VISUAL STUDIO CODE)
+
 135:EPMAP (End Point Mapper) / Microsoft RPC Locator Service (Microsoft RPC Serviço de localização)
 445:Microsoft-DS (Active Directory, Windows shares, Sasser (vírus), Agobot, Zobotworm
 5500:	fcp-addr-srvr1	fcp-addr-srvr1

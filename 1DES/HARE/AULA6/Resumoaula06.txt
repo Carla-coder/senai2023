@@ -1,0 +1,150 @@
+Resumo aula #06 de HARE 
+
+Rede TCP:é um conjunto de protocolos que possibilita a comunicação entre computadores e servidores, formando a Internet.Ele combina o Protocolo de Controle de Transmissão (TCP), responsável pela transmissão de dados, com o Protocolo de Internet (IP), que identificar os computadores e servidores.
+Rede IP:é um endereço exclusivo que identifica um dispositivo na Internet ou em uma rede local. IP vem do inglês "Internet Protocol" (protocolo de rede) que consiste em um conjunto de regras que regem o formato de dados enviados pela Internet ou por uma rede local.
+
+Tabela que traduz endereço físico de rede para o formato IP (ARP)
+
+O protocolo de resolução de endereço (ARP) é um protocolo ou procedimento que conecta um endereço de protocolo de internet (IP) em constante mudança a um endereço de máquina físico fixo, também conhecido como endereço de controle de acesso a mídia (MAC), em uma rede local (LAN). 
+Comando: arp -a
+
+Para saber o tipo de Sistema Operacional através do TTL (Time to Live)
+
+O tempo de vida (TTL) se refere à quantidade de tempo ou de "saltos" pelo qual se estabelece que um pacote deve existir dentro de uma rede antes de ser descartado por um roteador. 
+O TTL também é usado em outros contextos, incluindo o armazenamento em cache da CDN e o armazenamento em cache do DNS
+
+Comando: ping uol.com.br (exemplo)
+O TTL da uol é 247
+
+IP Dinâmico: é o IP da máquina de alguém, o que está na rede.Um endereço IP que muda depois de um tempo. A maioria dos dispositivos usa endereço IP dinâmico. 
+Eles podem mudar sempre que você faz login em seu computador ou a cada intervalo de dias, semanas, meses, dependendo do seu provedor de serviços de internet (ISP).
+
+IP Estático: é o IP que faz parte do Roteamento.Um endereço IP atribuído por seu provedor de serviços de internet (ISP) que não muda. 
+Ele é o contraste do endereço IP dinâmico, que é mais comum e é atribuído sempre que seu dispositivo se conecta com a internet.
+
+Exemplo: 10.87.202.157 sendo que 10.87.202 (rede) e o .157 (HOST IP)
+         10.87.202.129 sendo que o .129 é o gateway
+
+IP Internet 202.187.23.2
+IP Internet Local 10.87.202.129	
+IPV4 Internet externa 186.238.4.130
+
+O Roteador possui dois(2) IPs (Internet + Local)
+Exemplo: http:// 80
+		 https:// 443
+
+Lista de Protocolos
+
+1. IP
+O protocolo IP, do termo em inglês Internet Protocol (Protocolo de Internet) faz parte da camada de internet e é um dos protocolos mais importantes da web. Ele permite a elaboração e transporte dos pacotes de dados, porém sem assegurar a sua entrega.
+O destinatário da mensagem é determinado por meio dos campos de endereço IP (endereço do computador), máscara de sub rede (determina parte do endereço que se refere à rede) e o campo gateway estreita por padrão (permite saber qual o computador de destino, caso não esteja localizado na rede local).
+
+2. TCP/IP
+Trata-se do acrônimo de dois protocolos combinados. São eles o TCP (Transmission Control Protocol — Protocolo de Controle de Transmissão) e IP (Internet Protocol — Protocolo de Internet).
+juntos, são os responsáveis pela base de envio e recebimento de dados por toda a internet. Essa pilha de protocolos é dividida em 4 camadas:
+aplicação: usada para enviar e receber dados de outros programas pela internet. Nessa camada estão os protocolos HTTP, FTP e SMTP;
+transporte: responsável por transportar os arquivos dos pacotes recebidos da camada de aplicação. Eles são organizados e transformados em outros menores, que serão enviados à rede;
+rede: os arquivos empacotados na camada de transporte são recebidos e anexados ao IP da máquina que envia e recebe os dados. Em seguida, eles são enviados pela internet;
+interface: é a camada que executa o recebimento ou o envio de arquivos na web.
+ 
+3. HTTP/HTTPS
+O protocolo HTTP (Hypertext Transfer Protocol — Protocolo de Transferência de Hipertexto) é usado para navegação em sites da internet. Funciona como uma conexão entre o cliente (browser) e o servidor (site ou domínio).
+O navegador envia um pedido de acesso a uma página, e o servidor retorna uma resposta de permissão de acesso. Junto com ela são enviados também os arquivos da página que o usuário deseja acessar.
+Já o HTTPS (Hyper Text Transfer Secure — Protocolo de Transferência de Hipertexto Seguro) funciona exatamente como o HTTP, porém, existe uma camada de proteção a mais. Isso significa que os sites que utilizam esse protocolo são de acesso seguro.
+O protocolo HTTPS é comumente usado por sites com sistemas de pagamentos. Esse tipo de site depende de proteção que garanta a integridade dos dados, informações de conta e cartão de créditos dos usuários. A segurança é feita por meio de uma certificação digital, que cria uma criptografia para impedir ameaças e ataques virtuais.
+
+4. FTP
+Significa Protocolo de Transferência de Arquivos (do inglês File Transfer Protocol). É a forma mais simples para transferir dados entre dois computadores utilizando a rede.
+O protocolo FTP funciona com dois tipos de conexão: a do cliente (computador que faz o pedido de conexão) e do servidor (computador que recebe o pedido de conexão e fornece o arquivo ou documento solicitado pelo cliente).
+O FTP é útil caso o usuário perca o acesso ao painel de controle do seu site. Assim sendo,essa ferramenta pode ser usada para realizar ajustes página, adicionar ou excluir arquivos, ou ainda solucionar qualquer outra questão no site.
+
+5. SFTP
+Simple Transfer Protocol (Protocolo de Transferência Simples de Arquivos) consiste no protocolo FTP acrescido de uma camada de proteção para arquivos transferidos.
+Nele, a troca de informações é feita por meio de pacotes com a tecnologia SSH (Secure Shell – Bloqueio de Segurança), que autenticam e protegem a conexão entre cliente e servidor. O usuário define quantos arquivos serão transmitidos simultaneamente e define um sistema de senhas para reforçar a segurança.
+
+6. SSH
+SSH (Secure Shell, já citado acima) é um dos protocolos específicos de segurança de troca de arquivos entre cliente e servidor. Funciona a partir de uma chave pública. Ela verifica e autentica se o servidor que o cliente deseja acessar é realmente legítimo.
+O usuário define um sistema de proteção para o site sem comprometer o seu desempenho. Ele fortifica a segurança do projeto e garante maior confiança e estabilidade na transferência de arquivos.
+
+7. SSL
+O protocolo SSL (Secure Sockets Layer — Camada de Portas de Segurança) permite a comunicação segura entre os lados cliente e servidor de uma aplicação web, por meio de uma confirmação da identidade de um servidor e a verificação do seu nível de confiança.
+Ele age como uma subcamada nos protocolos de comunicação na internet (TCP/IP). Funciona com a autenticação das partes envolvidas na troca de informações.
+A conexão SSL é sempre iniciada pelo cliente, que solicita conexão com um site seguro. O browser, então, solicita o envio do Certificado Digital e verifica se ele é confiável, válido, e se está relacionado ao site que fez o envio. Após a confirmação das informações, a chave pública é enviada e as mensagens podem ser trocadas.
+
+8. ICMP
+Sigla para Internet Control Message Protocol (Protocolo de Mensagens de Controle da Internet). Esse protocolo autoriza a criação de mensagens relativas ao IP, mensagens de erro e pacotes de teste.
+Ele permite gerenciar as informações relativas a erros nas máquinas conectadas. O protocolo IP não corrige esses erros, mas os mostra para os protocolos das camadas vizinhas. Por isso, o protocolo ICMP é usado pelos roteadores para assinalar um erro, chamado de Delivery Problem (Problema de Entrega).
+
+9. SMTP
+Protocolo para transferência de e-mail simples (Simple Mail Transfer Protocol) é comumente utilizado para transferir e-mails de um servidor para outro, em conexão ponto a ponto.
+As mensagens são capturadas e enviadas ao protocolo SMTP, que as encaminha aos destinatários finais em um processo automatizado e quase instantâneo. O usuário não tem autorização para realizar o download das mensagens no servidor.
+
+10. TELNET
+Protocolo de acesso remoto. É um protocolo padrão da Internet que permite obter uma interface de terminais e aplicações pela web. Fornece regras básicas para ligar um cliente a um intérprete de comando.
+Ele tem como base uma conexão TCP para enviar dados em formato ASCII codificados em 8 bits, entre os quais se intercalam sequências de controle Telnet. Assim, fornece um sistema orientado para a comunicação bidirecional e fácil de aplicar.
+
+11. POP3
+Acrônimo para Post Office Protocol 3 (Protocolo de Correios 3). É um protocolo utilizado para troca de mensagens eletrônicas. Funciona da seguinte forma: um servidor de email recebe e armazena mensagens. O cliente se autentica ao servidor da caixa postal para poder acessar e ler as mensagens.
+Assim, as mensagens armazenadas no servidor são transferidas em sequência para o computador do cliente. Quando, a conexão é encerrada as mensagens ainda são acessadas no modo offline.
+
+Tabela de Rotas
+Comando: netstat -rn
+(IPV4- IPV6)
+Exemplos para verificar: ping uol.com.br
+						 ping brasil.gov.br
+						 ping senai.com
+						 ping terra.com.br
+
+Tabela de Mascaramento de Rede
+Comando: ip mask
+exemplo: 192.168.0.255 sendo que .255 é o Broadcasting (Ip da rede inteira) já o 192.168.0.1 vão de 1 a 254 (são os IPs locais)
+
+Tipos de Classes de rede
+
+Classe	    Faixa de endereços de IP	   Notação CIDR	  Número de Redes	Número de IPs	IPs por rede
+Classe A    10.0.0.0 – 10.255.255.255	      10.0.0.0/8	          128	   16.777.216	  16.777.214
+Classe B	172.16.0.0 – 172.31.255.255	    172.16.0.0/12	       16.384	    1.048.576	      65 534
+Classe C	192.168.0.0 – 192.168.255.255  192.168.0.0/16	    2.097.152	       65.535	         254
+
+Classe A: Primeiro bit é 0 (zero);
+Classe B: Primeiros dois bits são 10 (um, zero);
+Classe C: Primeiros três bits são 110 (um, um, zero);
+Classe D: (endereço multicast): Primeiros quatro bits são: 1110 (um, um, um, zero);
+Classe E: (endereço especial reservado): Primeiros quatro bits são 1111 (um, um, um, um)
+
+Classe		Gama de Endereços		Nº de Endereços por Rede
+A		0.0.0.1 até 126.255.255.255		16 777 216
+B		128.0.0.0 até 191.255.255.255		65 536
+C		192.0.0.0 até 223.255.255.255		256
+D		224.0.0.0 até 239.255.255.255		Multicast
+E		240.0.0.0 até 255.255.255.254		Uso futuro; atualmente reservada a testes pela IETF
+O IP 0.0.0.0 não conta porque é da rede e o 127.255.255.255 é para o broadcast.
+
+Classe A (internet) .255 ( menos redes) .0.0.0 ( menos hosting)
+
+Tabela de Mascaramento de Red (Net Mask Table)
+	./24 (Classe A e B) 255.255.255.0
+	./25 (Classe A e B) 255.255.255.128 => SENAI
+	
+Portas de rede
+
+Exemplo: Abrir O Visual Studio Code - Portifólio - Open Live Server - digite no prompt o comando netstat -an
+Abrirá uma lista com as portas abertas (Listening) 0.0.0.0
+
+Backbone ( espinha dorsal) => Para saber o tempo em milisegundos da Rede (Saltos) 
+Digite o comando: tracert bbc.co.k ( 9 saltos de 4 ms )
+No Brasil a rota do Senai é a tdatabrasil.net.br (Telefônica)=> "pesquisa no site whois" ( 9 saltos de 5 ms )
+
+Comandos do prompt do Windows usados na aula #06 de redes:
+
+ip config
+ping
+ipconfig /all
+ip mask
+arp -a
+netstat -rn
+netsat -an
+tracert
+
+
+
