@@ -1,0 +1,75 @@
+10/11/2023 - Continuação aula de REDES aula #9 
+
+Qual é considerado endereço IP?
+
+(1). 10.172.258.13 => não é endereço IP por causa do 258
+(2). 192.168.-3.18 => não é endereço IP por causa do -3
+(3). 172.16.263.10 => não é endereço IP por causa do 263 
+(4). 192.168.1.1 => este é endereço IP
+
+IP é formado por 4 partes totalizando 32 bits
+
+Máscaras
+
+Classe A 255.0.0.0 = 8 bits
+Classe B 255.255.0.0 = 16 bits
+Classe C 255.255.255.0 = 24 bits => a rede esta localizada nas 3 primeiras parte e o Host na última ( é o número de computadores por rede)
+
+Por exemplo: A máscara do Senai é: 255.255.255.128 => 128 é metade de 256 
+Essa rede pode ser dividida em duas partes, ou seja, duas sub-redes de 128
+O IP 10.87.202.157 está na segunda sub-rede ( acima de 128)
+O IP 10.87.202.113 está na primeira sub-rede (abaixo de 128)
+
+Gateway: sempre o primeiro (IPV4)
+Broadcasting: sempre o último (transmiti um pacote que será recebido por todos os dispositivos na rede)
+DHCP: responsável por distribuír os IPs
+
+Exercícios:
+
+1 Dado o IP 192.168.10.5/24, qual é a máscara de sub-rede?
+
+Classe C 255.255.255.0
+
+2 Dado o IP 10.87.202.132/25 qual é o gateway e máscara de sub-rede?
+
+máscara: Classe C 128
+gateway: 10.87.202.129
+broadcast: 10.87.202.255
+
+exemplo: Dado o IP 10.87.202.120/25 qual é o gateway e máscara de sub-rede? => está abaixo de 128
+
+máscara: Classe C 128 => é a metade de 256
+IP da rede: 10.87.202.0
+gateway: 10.87.202.1 ( primeiro )
+broadcast: 10.87.202.127 ( último )
+
+
+3 Dado o IP 172.16.100.25/24 qual é o gateway, máscara de sub-rede e broadcast?
+ 
+máscara Classe C 255.255.255.0 => de 1 a 255
+Ip da rede: 172.16.100.0
+gateway: 172.16.100.1 ( primeiro )
+broadcast: 172.16.100.255 ( último )
+
+4. Dado o Ip 192.168.1.144/26 qual a máscara , o Ip da rede, o gateway e o broadcast?
+
+Rede #1
+máscara Classe C 255.255.255.192 64 192 = 11 000000 256/4 = 64
+Ip da rede: 192.168.1.0
+gateway: 192.168.1.1
+broadcast: 192.168.1.63
+
+Rede #2
+Ip da rede: 192.168.1.64
+gateway: 192.168.1.65
+broadcast: 192.168.1.127
+
+Rede #3 ( resposta do exercício)
+Ip da rede: 192.168.1.128
+gateway: 192.168.1.129
+broadcast: 192.168.1.191
+
+Rede #4
+Ip da rede: 192.168.1.192
+gateway: 192.168.1.193
+broadcast: 192.168.1.255

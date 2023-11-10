@@ -31,7 +31,7 @@ IPV4 Internet externa 186.238.4.130
 
 O Roteador possui dois(2) IPs (Internet + Local)
 Exemplo: http:// 80
-		 https:// 443
+              https:// 443
 
 Lista de Protocolos
 
@@ -91,9 +91,9 @@ Tabela de Rotas
 Comando: netstat -rn
 (IPV4- IPV6)
 Exemplos para verificar: ping uol.com.br
-						 ping brasil.gov.br
-						 ping senai.com
-						 ping terra.com.br
+		       ping brasil.gov.br
+		       ping senai.com
+		       ping terra.com.br
 
 Tabela de Mascaramento de Rede
 Comando: ip mask
@@ -102,9 +102,9 @@ exemplo: 192.168.0.255 sendo que .255 é o Broadcasting (Ip da rede inteira) já
 Tipos de Classes de rede
 
 Classe	    Faixa de endereços de IP	   Notação CIDR	  Número de Redes	Número de IPs	IPs por rede
-Classe A    10.0.0.0 – 10.255.255.255	      10.0.0.0/8	          128	   16.777.216	  16.777.214
-Classe B	172.16.0.0 – 172.31.255.255	    172.16.0.0/12	       16.384	    1.048.576	      65 534
-Classe C	192.168.0.0 – 192.168.255.255  192.168.0.0/16	    2.097.152	       65.535	         254
+Classe A    10.0.0.0 – 10.255.255.255	      10.0.0.0/8	          128	                 16.777.216	16.777.214
+Classe B	172.16.0.0 – 172.31.255.255	    172.16.0.0/12	       16.384	                   1.048.576	      65 534
+Classe C	192.168.0.0 – 192.168.255.255  192.168.0.0/16	    2.097.152	                       65.535	           254
 
 Classe A: Primeiro bit é 0 (zero);
 Classe B: Primeiros dois bits são 10 (um, zero);
@@ -145,6 +145,8 @@ arp -a
 netstat -rn
 netsat -an
 tracert
+*****************************************************************************************************************************************************
+
 
 
 
