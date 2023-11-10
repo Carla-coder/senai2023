@@ -37,7 +37,7 @@ nav .search input {
     outline: none;
     border: none;
     font-size: 20px;
-    background-color: #faf1f1;
+    background-color: white;
 }
 
 nav .search i {
@@ -49,7 +49,7 @@ nav .search i {
 nav .log  {
     display: flex;
     align-items: center;
-    gap: 200px;
+    gap: 120px;
     font-size: 1.3em;
 }
 
@@ -66,6 +66,60 @@ nav .log img {
 .cart {
     cursor: pointer;
 }
+
+main .categorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.0em;
+    background-color: #ddcc85;
+} 
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid  #d28520;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.card {
+    border: 2px solid #d28520;
+    border-radius: 3px;
+    width: 200px;
+    height: 200px;
+}
+
+.col {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card h2{
+    text-align: center;
+    margin-right: 30px;
+}
+
+.card h3{
+    text-align: center;
+    font-size: 18px;
+    color: #d28520;
+    margin-bottom:  10px;
+    transform: rotate(270deg);
+    text-align: left;
+    position: relative;
+}
+
+.card p{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
 
 
 

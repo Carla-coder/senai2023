@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!--Fim Google Fonts-->
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -14,6 +17,7 @@
     <link rel="stylesheet" href="style.css">
     <title>C++ Moda Masculina</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -21,7 +25,7 @@
                 <a hef="#">
                     <img src="imagens/Logotipo.png" alt="Logotipo" width="150" height="150">
                 </a>
-                </div><!--Logo-->
+            </div><!--Logo-->
 
             <div class="search">
                 <input type="search" placeholder="Buscar...">
@@ -29,17 +33,121 @@
             </div><!--Search-->
 
             <div class="log">
-                <a href="#">
-                    <p>Entrar ou Cadastrar</p>
+                <a href="entrar.html">
+                    <p>Entrar</p>
                 </a>
+                <a href="cadastrar.html">
+                    <p>Cadastrar</p>
+                </a>
+                <div class="cart">
+                    <a href="#">
+                        <img src="imagens/carrinho.png">
+                    </a>
+                </div>
 
-            <div class="cart">
-                <a href="#">
-                <img src="imagens/carrinho.png">
-                </a>
-                    
-            </div>
-         </nav>
+        </nav>
     </header>
+    <main>
+        <div class="categorias">
+            <a href="#">
+                <p>Nossos Produtos</p>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" id="card01">
+                    <h2 id="t1">Camiseta</h2>
+                    <h3 id="t2">Vestuário</h3>
+                    <img id="t3" src="imagens/camiseta1.webp">
+                    <p id="t4">R$ 89,90</p>
+                </div>
+                <div class="card" id="card01">
+                    <h2 id="t1">Calça</h2>
+                    <h3 id="t2">Vestuário</h3>
+                    <img id="t3" src="imagens/calça3.webp">
+                    <p id="t4">R$ 99,90</p>
+                </div>
+                <div class="card" id="card01">
+                    <h2 id="t1">Cueca</h2>
+                    <h3 id="t2">Vestuário</h3>
+                    <img id="t3" src="imagens/cueca2.webp">
+                    <p id="t4">R$ 15,00</p>
+                </div>
+                <div class="card" id="card01">
+                    <h2 id="t1">Meia</h2>
+                    <h3 id="t2">Vestuário</h3>
+                    <img id="t3" src="imagens/meia1.webp">
+                    <p id="t4">R$ 12,99</p>
+                </div>
+                <div class="card" id="card01">
+                    <h2 id="t1">Boné</h2>
+                    <h3 id="t2">Vestuário</h3>
+                    <img id="t3" src="imagens/boné1.webp">
+                    <p id="t4">R$ 79,90</p>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="col1">
+                    <div class="card1" id="card01">
+                        <h2 id="t1">Miniatura Caminhão</h2>
+                        <h3 id="t2">Decoração</h3>
+                        <img id="t3" src="imagens/caminhao1.webp">
+                        <p id="t4">R$ 350,00</p>
+                    </div>
+                    <div class="card1" id="card01">
+                        <h2 id="t1">Miniatura Moto</h2>
+                        <h3 id="t2">Decoração</h3>
+                        <img id="t3" src="imagens/moto2.webp">
+                        <p id="t4">R$ 180,00</p>
+                    </div>
+                    <div class="card1" id="card01">
+                        <h2 id="t1">Miniatura Fusca</h2>
+                        <h3 id="t2">Decoração</h3>
+                        <img id="t3" src="imagens/fusca2.jpg">
+                        <p id="t4">R$ 200,00</p>
+                    </div>
+                    <div class="card1" id="card01">
+                        <h2 id="t1">Miniatura Bike</h2>
+                        <h3 id="t2">Decoração</h3>
+                        <img id="t3" src="imagens/bike1.webp">
+                        <p id="t4">R$ 150,00</p>
+                    </div>
+                    <div class="card1" id="card01">
+                        <h2 id="t1">Miniatura Bike</h2>
+                        <h3 id="t2">Decoração</h3>
+                        <img id="t3" src="imagens/bike3.webp">
+                        <p id="t4">R$ 150,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="col2">
+                    <div class="card2" id="card01">
+                        <h2 id="t1">Miniatura Thor</h2>
+                        <h3 id="t2">Colecionáveis</h3>
+                        <img id="t3" src="imagens/thor.webp">
+                        <p id="t4">R$ 480,00</p>
+                    </div>
+                    <div class="row2">
+                        <div class="col2">
+                            <div class="card2" id="card01">
+                                <h2 id="t1">Miniatura Hulk</h2>
+                                <h3 id="t2">Colecionáveis</h3>
+                                <img id="t3" src="imagens/hulk.webp">
+                                <p id="t4">R$ 400,00</p>
+                            </div>
+                            <div class="row2">
+                                <div class="col2">
+                                    <div class="card2" id="card01">
+                                        <h2 id="t1">Miniatura Homem de ferro</h2>
+                                        <h3 id="t2">Colecionáveis</h3>
+                                        <img id="t3" src="imagens/homemdeferro.webp">
+                                        <p id="t4">R$ 560,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </main>
 </body>
+
 </html>
