@@ -114,11 +114,11 @@ main .categorias {
     font-size: 18px;
     color: #d28520;
     margin-bottom: 10px;
-    transform: rotate(270deg);
-    float: inline-start;
+    /* transform: rotate(270deg);
+    float: inline-start; */
     color: #d28520;
     text-shadow: black 0.1em 0.1em 0.2em
-        /* position: relative; */
+         /* position: relative;  */
 }
 
 .card p {
@@ -165,8 +165,8 @@ main .categorias {
     font-size: 18px;
     color: #d28520;
     margin-bottom: 10px;
-    transform: rotate(270deg);
-    float: inline-start;
+    /* transform: rotate(270deg);
+    float: inline-start; */
     color: #d28520;
     text-shadow: black 0.1em 0.1em 0.2em
 }
@@ -215,8 +215,8 @@ main .categorias {
     font-size: 18px;
     color: #d28520;
     margin-bottom: 10px;
-    transform: rotate(270deg);
-    float: inline-start;
+    /* transform: rotate(270deg);
+    float: inline-start; */
     color: #d28520;
     text-shadow: black 0.1em 0.1em 0.2em
 }
