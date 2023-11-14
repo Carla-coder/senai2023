@@ -1,113 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
     <title>Ateliê e Marcenaria Bee Country</title>
-    <link rel="shortcut icon" href="/img/icons/beecountry.png">
-    <link rel="stylesheet" href="/style.css">
-
 </head>
+
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="/img/icons/beecountry.png">
-            </div>
-            <div class="search">
-                <imput type="search" placeholder="Buscar...">
-                <img src="/img/icons/lupa.png">
-            </div>
-            <div class="log">
                 <a href="#">
+                    <img src="img/icons/beecountry.png" alt="Logotipo" width="150" height="150">
+                </a>
+            </div>
+
+            <div class="search">
+                <input type="search" placeholder="Buscar...">
+                <i class="bi bi-search"></i>
+            </div>
+
+            <div class="log">
+                <a href="entrar.html">
                     <p>Entrar</p>
                 </a>
-                <a href="#">
+
+                <a href="cadastrar.html">
                     <p>Cadastrar</p>
                 </a>
-            <div class="cart">
-                <img src="/img/icons/carrinho.png">
-            </div>
-        </div>
-            <div class="shop">
-        </div>
-    </nav>
-</header>
+
+                <div class="cart">
+                    <a href="#">
+                        <img src="img/icons/carrinho.png">
+                    </a>
+                </div>
+        </nav>
+    </header>
     <main>
         <div class="categorias">
-            <a href="#">
-                <p>Country Primitivo</p>
-            </a>
-            <div class="categorias">
-            <a href="#">
-                <p>Páscoa</p>
-            </a>
-        <div class="categorias">
-            <a href="#">
-                <p>Madeira Pinus</p>
-            </a>
-        <div class="categorias">
-            <a href="#">
-                <p>Natal</p>
-            </a>
+            <p>Nossos Produtos</p>
         </div>
-        <div class="main-page">
-            <div class="filter">
-                <p class="filter-p">Filtros</p>
 
-                <a href="#">
-                    <p>Novos</p>
-                </a>
-                <a href="#">
-                    <p>Mais Vendidos</p>
-                </a>
-                <a href="#">
-                    <p>Maior Preço</p>
-                </a>
-                <a href="#">
-                    <p>Menor Preço</p>
-                </a>
-        </div>
-            <section class="product-grid">
-                <div class="item-card">
-                    <div class="discount"></div>
-                    <img src="/img/produtos/kit espantalho guirlanda 2.jpg">
-                    <p>Kit Espantalho para guirlanda<br>R$ 40,00</p>
+        <div class="row">
+            <div class="col">
+                <div class="card" id="card01">
+                    <h2 id="t1">Kit espantalho Guirlanda</h2>
+                    <h3 id="t2">Coleção Fall</h3>
+                    <img id="t3" src="img/produtos/Kit espantalho guirlanda 2.jpg">
+                    <p id="t4">R$ 40,00</p>
                 </div>
-                <div class="item-card">
-                    <img src="/img/produtos/kit coelho com base.jpg">
-                    <p><br>R$ 25,00 </p>
-                </div>
-                <div class="item-card">
-                    <img src="/img/produtos/abóbora porta vela.jpg">
-                    <p>kit Abóbora porta vela<br>R$ 12,00</p>
-                </div>
-                <div class="item-card">
-                    <img src="/img/produtos/kit abobora com corvo.jpg">
-                    <p>Kit Abóbora com corvo<br>R$ 24,80</p>
-                </div>
-                <div class="item-card">
-                    <img src="/img/produtos/kit igrejinha.jpg">
-                    <p>Kit igrejinha<br>R$ 14,40</p>
-                </div>
-            </section>
-        </div>
-    </main>
 
-        <footer>
-            <div class="contact">
-                <div class="contact-1">
-                    <p>Contato</p>
-                    <p>Contato</p>
-                    <p>Contato</p>
+                <div class="card" id="card01">
+                    <h2 id="t1">Kit Abóbora porta vela</h2>
+                    <h3 id="t2">Coleção Fall</h3>
+                    <img id="t3" src="img/produtos/abóbora porta vela.jpg">
+                    <p id="t4">R$ 12,00</p>
                 </div>
-                <div class="contact-2">
-                    <p>Venda</p>
-                    <p>Navegação</p>
-                    <p>Suporte</p>
+
+                <div class="card" id="card01">
+                    <h2 id="t1">Kit Espantalho porta Vela</h2>
+                    <h3 id="t2">Coleção Fall</h3>
+                    <img id="t3" src="img/produtos/espantalho porta vela em mdf 1.jpg ">
+                    <p id="t4">R$ 12,00</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row1">
+            <div class="col1">
+                <div class="card1" id="card01">
+                    <h2 id="t1">Kit Coelho com base</h2>
+                    <h3 id="t2">Coleção Easter</h3>
+                    <img id="t3" src="img/produtos/kit coelho com base.jpg">
+                    <p id="t4">R$ 25,00</p>
+                </div>
+
+                <div class="card1" id="card01">
+                    <h2 id="t1">Kit Igrejinha</h2>
+                    <h3 id="t2">Coleção Christmas</h3>
+                    <img id="t3" src="img/produtos/kit igrejinha.jpg">
+                    <p id="t4">R$ 14,40</p>
+                </div>
+
+                <div class="card1" id="card01">
+                    <h2 id="t1">Kit Abóbora com Corvo</h2>
+                    <h3 id="t2">Coleção Fall</h3>
+                    <img id="t3" src="img/produtos/kit abobora com corvo.jpg">
+                    <p id="t4">R$ 24,80</p>
                 </div>
             </div>
-        </footer>
-    
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <p>© 2023 Ateliê e Marcenaria Bee Country</p>
+
+        <label id="rodape"></label>
+
+        <script>
+
+            const rodape = document.getElementById("rodape");
+
+            rodape.innerHTML = new Date().toLocaleDateString();
+            rodape.innerHTML += ' ';
+            rodape.innerHTML += new Date().toLocaleTimeString();
+
+        </script>
+
+    </footer>
 </body>
+
 </html>
