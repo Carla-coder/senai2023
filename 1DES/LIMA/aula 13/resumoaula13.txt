@@ -1,0 +1,28 @@
+LIMA aula #13
+
+UI (User Interfaces)
+
+Na Linguagem de marcação temos HTML + CSS. 
++ JAVA SCRIPT temos o FRONTEND ( ou web design ).
+
+O DESIGN do UI se chama "WIREFRAME" ( esboço das telas ).
+
+Framework: conjunto de bibliotecas que ajuda a ganhar produtividade. Ganha em produtividade mas perde em personalização, ou seja, é padronizado.
+Não é obrigatório.
+
+Boostrap: é um dos frameworks( mais leves ) ele perde na personalização.
+Primefaces: é outro tipo de Framework
+World Press:(pesquisar e estudar)- curso em vídeo do Gustavo Guanabara.
+
+*************************************************************************************************************************************************
+
+Comandos dentro do VSC para converter arquivo CSV em Jason ( baixar a extensão "csv to Jason" )
+ctrl + H encima do texto csv para abrir o "Replace" e fazer a troca de "virgula" para "ponto" e depois "ponto e vírgula" para "virgula".
+ctrl + shift + p para buscar o "convert csv to jason" + enter.
+shift + alt + F identação
+tecla ALT, a tecla de função,(pressionadas juntos ) e digite os números 00169 para coloar o símbolo do Copyright
+
+Método de Trabalho
+ Modelo = card
+ Visão = container
+ Controle = script.js (vetor = lista)
