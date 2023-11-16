@@ -1,0 +1,11 @@
+aula #03 - SOP ( POWER BI )
+
+Desafio 01
+
+Visto hoje no exercicio: Power Query/ Power Pivot/ Dax- LookValue (Val, PK, Foreian )
+                                                      - Related (val)
+													  
+
+Análise de Dados: Estrela: transformo o Fato ( centro da estrela ) e separa em Dimensões ( ponta da estrela )
+				  Floco de Neve: separar
+													  
