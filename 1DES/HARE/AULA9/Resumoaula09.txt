@@ -21,16 +21,16 @@ O IP 10.87.202.157 está na segunda sub-rede ( acima de 128)
 O IP 10.87.202.113 está na primeira sub-rede (abaixo de 128)
 
 Gateway: sempre o primeiro (IPV4)
-Broadcasting: sempre o último (transmiti um pacote que será recebido por todos os dispositivos na rede)
+Broadcasting: sempre o último (transmite um pacote que será recebido por todos os dispositivos na rede)
 DHCP: responsável por distribuír os IPs
 
 Exercícios:
 
-1 Dado o IP 192.168.10.5/24, qual é a máscara de sub-rede?
+1. Dado o IP 192.168.10.5/24, qual é a máscara de sub-rede?
 
 Classe C 255.255.255.0
 
-2 Dado o IP 10.87.202.132/25 qual é o gateway e máscara de sub-rede?
+2. Dado o IP 10.87.202.132/25 qual é o gateway e máscara de sub-rede?
 
 máscara: Classe C 128
 gateway: 10.87.202.129
@@ -44,7 +44,7 @@ gateway: 10.87.202.1 ( primeiro )
 broadcast: 10.87.202.127 ( último )
 
 
-3 Dado o IP 172.16.100.25/24 qual é o gateway, máscara de sub-rede e broadcast?
+3. Dado o IP 172.16.100.25/24 qual é o gateway, máscara de sub-rede e broadcast?
  
 máscara Classe C 255.255.255.0 => de 1 a 255
 Ip da rede: 172.16.100.0
