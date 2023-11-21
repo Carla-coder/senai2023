@@ -1,0 +1,29 @@
+Explicação Téorica Do Encapsulamento em Javascript (POO)- Apresentação em grupo
+
+Encapsulamento é um conceito de programação orientada a objetos (POO) que envolve o ocultamento de detalhes de implementação de uma classe.
+ *é um dos pilares da Orientação a Objetos.
+  Por meio dele, é possível simplicar bastante a programação, bem como proteger informações sigilosas ou sensíveis.
+
+Ele ajuda a proteger os dados de um objeto, limitando o acesso direto aos mesmos.
+  *permite que você controle quem pode acessar e modificar os Atributos de uma Classe.
+   Isso ajuda a evitar bugs causados por modificações inesperadas em variáveis de instância.
+
+Em termos simples, encapsular significa empacotar o estado (dados) e o comportamento (métodos) de um objeto e protege-los de interferências externas.
+  *Nesse caso, temos 3 tipos de permissão ao acesso de um Atributo:
+  
+    1.Público: Métodos e propriedades marcados como públicos são acessíveis de qualquer lugar, tanto dentro como fora da classe. 
+	       Ele serve como a interface pública da classe.
+	       *consiste no nível de proteção mais baixo de todos, uma vez que todas as Classes de um programa podem acessar os Dados e os Métodos livremente.
+	        Pode-se dizer que nesse caso " Não existe encapsulamento".
+    
+    2.Protegido: Acesso restrito à própria classe e às suas subclasses. 
+	         Isso permite que as subclasses acessem certos membros, mas mantem esses membros ocultos de outras classes.
+		 *nesse nível,o acesso passa a ser mais restrito. Somente as Classes derivadas da original é que tem "Acesso total" aos Atributos e Métodos.
+	          Aqui já existe encapsulamento, de modo que os Métodos Get e Set passam a ser usados, bem como na declaração do Atributo, usa-se o private em vez do public.
+	
+    3.Privado: Acesso restrito apenas à própria classe. Os membros privados não podem ser acessados diretamente por outras classes.
+	       *aqui o acesso aos Dados é feito somente dentro da própria Classe onde ela foi declarada. 
+	        O nível Protegido está diretamente ligado ao conceito de herança. 
+	
+	
+	
