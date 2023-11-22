@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (window.AudioContext || window.webkitAudioContext) {
+            // O navegador suporta a API de Áudio do JavaScript
+            console.log('API de Áudio é suportada');
+        } else {
+            // O navegador não suporta a API de Áudio do JavaScript
+            console.log('API de Áudio não é suportada');
+        }
+
+        const morseCode = {
+            'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-',
+            'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-',
+            'W': '.--', 'X': '-..-', 'Y': '-.--', 'Z': '--..', '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....',
+            '6': '-....', '7': '--...', '8': '---..', '9': '----.', ', ': '--..--', '.': '.-.-.-', '?': '..--..', ' ': '/', '-': '-....-', '/': '-..-.', '@': '.--.-.', '=': '-...-'   // ... (as in the JavaScript code)
+        };
+
+        function toMorseCode(text) {
+            return text.toUpperCase().split('').map(char => morseCode[char] || '').join(' ');
+            playMorseSound(morse);
+        }
+
+        function playMorseSound(morse) {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+            const frequency = 600; // Frequência do som em Hz
+            const dotDuration = 100; // Duração do ponto (em milissegundos)
+
+            morse.split('').forEach(symbol => {
+                if (symbol === '.') {
+                    playSound(frequency, dotDuration);
+                } else if (symbol === '-') {
+                    playSound(frequency, dotDuration * 3); // Traço é 3 vezes mais longo que o ponto
+                } else if (symbol === ' ') {
+                    // Adiciona um pequeno atraso entre as palavras
+                    sleep(dotDuration);
+                }
+                // Adiciona um pequeno atraso entre os símbolos
+                sleep(dotDuration);
+            });
+
+            function playSound(frequency, duration) {
+                const oscillator = audioContext.createOscillator();
+                oscillator.type = 'sine';
+                oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
+                oscillator.connect(audioContext.destination);
+                oscillator.start();
+                oscillator.stop(audioContext.currentTime + (duration / 1000));
+            }
+
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Morse Code Converter</h1>
+    <form>
+        <label for="text">Texto:</label>
+        <input type="text" id="text" name="text">
+        <br>
+        <label for="morse">Código Morse:</label>
+        <textarea id="morse" name="morse" rows="2" cols="50" readonly></textarea>
+        <br>
+        <button type="button"
+            onclick="document.getElementById('morse').value = toMorseCode(document.getElementById('text').value)">Converssão</button>
+    </form>
+</body>
+
+</html>
