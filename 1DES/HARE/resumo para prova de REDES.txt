@@ -1,0 +1,205 @@
+Resumo de estudo para prova de REDES - HARE
+
+Explicação sobre Endereçamento IP:
+
+O endereçamento IP (Protocolo de Internet) é um sistema numérico que é atribuído a dispositivos em uma rede para identificá-los e permitir que se comuniquem uns com os outros usando o protocolo IP. Existem dois padrões principais de endereçamento IP: IPv4 (Protocolo de Internet versão 4) e IPv6 (Protocolo de Internet versão 6).
+
+IPv4:
+Formato: O endereço IPv4 é um número de 32 bits, geralmente expresso como quatro conjuntos de números decimais separados por pontos (por exemplo, 192.168.0.1).
+Notação Decimal Pontuada: Cada conjunto de números varia de 0 a 255, o que resulta em mais de 4 bilhões de combinações possíveis.
+Exemplo: 192.168.1.1
+IPv6:
+Formato: O endereço IPv6 é um número de 128 bits, geralmente expresso em notação hexadecimal e dividido em oito grupos de quatro dígitos separados por dois pontos (por exemplo, 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+Notação Hexadecimal: Ele foi introduzido para resolver a limitação de endereços disponíveis no IPv4 e oferece um espaço de endereço virtualmente ilimitado.
+Exemplo: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+Componentes Principais:
+Endereço IP: Identifica exclusivamente um dispositivo em uma rede.
+Máscara de Sub-rede: Define a porção de rede e a porção de host do endereço IP.
+Gateway Padrão: Roteador usado para acessar redes fora da rede local.
+DNS (Sistema de Nomes de Domínio): Traduz nomes de domínio em endereços IP.
+Tipos de Endereços IP:
+Endereço IP Público: Identifica um dispositivo na Internet.
+Endereço IP Privado: Usado em redes locais privadas (exemplos: 192.168.x.x, 10.x.x.x).
+Endereço IP Estático: Atribuído manualmente e não muda.
+Endereço IP Dinâmico: Atribuído automaticamente pelo servidor DHCP e pode mudar.
+O endereçamento IP desempenha um papel crucial na comunicação de rede, permitindo que os dispositivos se localizem e se comuniquem de maneira eficaz.
+
+O endereçamento IP é um conceito fundamental em redes de computadores. Aqui estão alguns pontos-chave que você precisa saber sobre endereçamento IP:
+
+Identificação Única: Cada dispositivo em uma rede tem um endereço IP único, o que permite a identificação exclusiva na rede.
+
+IPv4 e IPv6: Existem dois principais protocolos de endereçamento IP em uso. O IPv4 é o mais comum e usa endereços de 32 bits no formato xxx.xxx.xxx.xxx. Já o IPv6 utiliza endereços de 128 bits no formato hexadecimal separados por dois pontos.
+
+Classes de Endereços (IPv4): Os endereços IPv4 são divididos em classes (A, B, C, D, E). As classes A, B e C são utilizadas para endereços de hosts, enquanto as classes D e E são reservadas para fins especiais.
+
+Máscara de Sub-rede: A máscara de sub-rede é usada para dividir um endereço IP em partes de rede e host. Isso facilita a gestão e a organização de sub-redes.
+
+Gateway Padrão: O gateway padrão é o roteador usado para encaminhar o tráfego para redes fora da rede local.
+
+DNS (Sistema de Nomes de Domínio): O DNS traduz nomes de domínio legíveis por humanos em endereços IP. Isso simplifica o processo de navegação na internet.
+
+Endereços Públicos e Privados: Os endereços públicos são visíveis na Internet, enquanto os endereços privados são usados internamente em redes locais. A faixa de endereços privados mais comum é 192.168.x.x.
+
+DHCP (Protocolo de Configuração Dinâmica de Host): O DHCP atribui automaticamente endereços IP a dispositivos em uma rede, facilitando a configuração de novos dispositivos sem intervenção manual.
+
+Estático vs. Dinâmico: Um endereço IP estático é configurado manualmente e não muda, enquanto um endereço IP dinâmico é atribuído automaticamente e pode mudar.
+
+IPv4 Esgotamento de Endereços: O IPv4 enfrenta escassez de endereços devido ao grande número de dispositivos conectados à Internet. O IPv6 foi introduzido para resolver essa limitação.
+
+Compreender esses conceitos é essencial para configurar e solucionar problemas em redes, pois o endereçamento IP é a base da comunicação entre dispositivos em uma rede.
+
+Máscara de rede:
+
+A máscara de sub-rede é uma parte fundamental do sistema de endereçamento IP que permite dividir um grande espaço de endereçamento IP em sub-redes menores. Essa divisão é útil por vários motivos, como melhorar o desempenho, segurança e gerenciamento da rede. Aqui estão os principais pontos sobre máscaras de sub-rede:
+
+O que é uma Máscara de Sub-rede:
+
+Uma máscara de sub-rede é um conjunto de bits que define quais partes de um endereço IP pertencem à rede e quais partes são reservadas para identificar hosts naquela rede.
+Formato da Máscara de Sub-rede:
+
+A máscara de sub-rede consiste em uma sequência contínua de bits 1 seguidos por uma sequência contínua de bits 0. Por exemplo, a máscara de sub-rede padrão de uma rede classe C é 255.255.255.0, o que em binário seria 11111111.11111111.11111111.00000000.
+Divisão de Endereços:
+
+Os bits de 1 na máscara de sub-rede indicam a parte da rede, enquanto os bits de 0 indicam a parte do host. Quando um endereço IP é "mascarado" usando a máscara de sub-rede, você pode identificar a rede e o host correspondentes.
+Tamanho da Sub-rede:
+
+O número de bits dedicados à parte do host na máscara de sub-rede determina o tamanho da sub-rede. Uma máscara de sub-rede com mais bits dedicados aos hosts permite mais endereços de host, mas resulta em menos sub-redes.
+VLSM (Máscaras de Sub-rede com Comprimento Variável):
+
+O VLSM permite a criação de sub-redes com diferentes tamanhos em uma única rede. Isso é útil quando você precisa alocar diferentes quantidades de endereços para diferentes partes de uma rede.
+CIDR (Roteamento sem Classes):
+
+O CIDR é uma extensão do conceito de máscara de sub-rede e permite uma notação mais flexível na representação de tamanhos de sub-redes.
+Exemplo Prático:
+
+Suponha uma rede com o endereço IP 192.168.1.0 e uma máscara de sub-rede 255.255.255.0. Nesse caso, os primeiros 24 bits são dedicados à rede, permitindo 2^8 (256) endereços de host na rede.
+A utilização adequada de máscaras de sub-rede é crucial para o design eficiente e organização de uma rede, especialmente em ambientes complexos onde várias sub-redes precisam coexistir.
+
+Protocolo TCP - IP:
+
+O Protocolo de Controle de Transmissão (TCP) e o Protocolo de Internet (IP) são dois protocolos fundamentais no conjunto de protocolos de comunicação utilizado na Internet e em muitas redes locais. Eles operam na camada de transporte (TCP) e na camada de rede (IP) do modelo OSI. Aqui estão algumas informações sobre esses protocolos:
+
+Protocolo de Internet (IP):
+Definição:
+
+O Protocolo de Internet (IP) é responsável pela entrega de pacotes de dados de um host de origem para um host de destino em uma rede.
+Endereçamento IP:
+
+Cada dispositivo em uma rede IP é identificado por um endereço IP único. O endereço IP é um identificador numérico que permite a roteamento e entrega correta de dados entre dispositivos.
+Versões:
+
+Existem duas versões principais do IP em uso: IPv4 e IPv6. IPv4 é mais comum, mas devido à limitação do espaço de endereçamento, IPv6 foi desenvolvido para oferecer um espaço de endereçamento muito maior.
+Roteamento:
+
+O IP utiliza tabelas de roteamento para determinar a melhor rota para os pacotes de dados através da rede. Roteadores são dispositivos responsáveis por encaminhar pacotes entre diferentes redes.
+Protocolo de Controle de Transmissão (TCP):
+Definição:
+
+O Protocolo de Controle de Transmissão (TCP) é responsável por garantir uma comunicação confiável e orientada à conexão entre duas aplicações em dispositivos diferentes.
+Confiabilidade:
+
+O TCP garante que os dados sejam entregues de forma ordenada e sem erros. Ele realiza controle de fluxo, ajustando a taxa de transmissão de dados com base na capacidade da rede e confirmação de recebimento de pacotes.
+Conexão Orientada:
+
+O TCP estabelece uma conexão antes de iniciar a transmissão de dados. Ele utiliza um processo de estabelecimento de conexão (handshake) para garantir que ambos os lados estejam prontos para a comunicação.
+Portas:
+
+Cada aplicação que utiliza o TCP é identificada por um número de porta. Isso permite que o TCP direcione os dados para a aplicação correta no dispositivo de destino.
+Encerramento de Conexão:
+
+O TCP realiza um processo de encerramento de conexão quando a comunicação é concluída, garantindo uma terminação adequada e liberando recursos.
+Relação Entre TCP e IP:
+Trabalho em Conjunto:
+
+O TCP e o IP trabalham juntos para fornecer uma solução completa para a comunicação em redes. O IP é responsável pela entrega de pacotes, enquanto o TCP oferece confiabilidade e controle de comunicação entre aplicações.
+Pilha de Protocolos:
+
+O termo "TCP/IP" frequentemente se refere à combinação desses dois protocolos, juntamente com outros protocolos relacionados, formando a pilha de protocolos usada na Internet e em muitas redes.
+A combinação do TCP/IP é uma base essencial para a comunicação na Internet e é usada em uma variedade de contextos, desde redes locais até comunicações globais.
+
+Comandos de Rede:
+
+Existem vários comandos de rede úteis que podem ser usados em sistemas operacionais como Windows, Linux e macOS para diagnosticar, configurar e verificar informações relacionadas à rede. Aqui estão alguns dos comandos comuns:
+
+Comandos no Windows:
+ipconfig:
+
+Exibe informações sobre configurações de IP, como endereço IP, máscara de sub-rede e gateway.
+bash
+Copy code
+ipconfig
+ping:
+
+Testa a conectividade com um host remoto enviando pacotes ICMP.
+bash
+Copy code
+ping google.com
+tracert (ou traceroute no Linux/Mac):
+
+Exibe a rota que pacotes levam para alcançar um host específico.
+bash
+Copy code
+tracert google.com
+netstat:
+
+Exibe informações sobre portas abertas e conexões de rede.
+bash
+Copy code
+netstat -a
+nslookup:
+
+Realiza consultas de DNS para obter informações sobre registros DNS.
+bash
+Copy code
+nslookup google.com
+Comandos no Linux/Mac:
+ifconfig (ou ip addr no Linux recente):
+
+Exibe informações sobre interfaces de rede, endereços IP e outras configurações.
+bash
+Copy code
+ifconfig
+ping:
+
+Testa a conectividade com um host remoto enviando pacotes ICMP.
+bash
+Copy code
+ping google.com
+traceroute (ou tracepath):
+
+Exibe a rota que pacotes levam para alcançar um host específico.
+bash
+Copy code
+traceroute google.com
+netstat:
+
+Exibe informações sobre portas abertas e conexões de rede.
+bash
+Copy code
+netstat -an
+dig:
+
+Realiza consultas de DNS para obter informações sobre registros DNS.
+bash
+Copy code
+dig google.com
+Esses são apenas alguns dos comandos de rede básicos disponíveis. Cada sistema operacional pode ter variações desses comandos, e novas ferramentas podem ser adicionadas dependendo da instalação de software específica. Esses comandos são valiosos para diagnosticar problemas de rede, verificar configurações e entender a conectividade em um sistema.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
