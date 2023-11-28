@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #D8BFD8;
+    margin-top: 400px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #FFE4E1;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FFE4E1;
+}
+
+#saida {
+    margin-top: 20px;
+}
+
+#saida p {
+    color: #777;
+}
