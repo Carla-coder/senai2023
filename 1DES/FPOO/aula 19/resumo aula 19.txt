@@ -1,0 +1,48 @@
+Resumo Aula 19 - Wellington (30/11/2023)
+
+Persistência de Dados - "Salvar Dados"
+
+Funções:
+
+1.Abrir e Salvar(Download) de arquivos de dados
+2.Login e nível de acesso
+3.CRUD com dados das listas
+
+Linguagens Universais:
+
+XML
+JSON - (JavaScript object) LINGUAGEM DE API (Formato que integra todos os sistemas). Dentro do JS é o jason puro (objeto), fora do JS ele é Stringify ( ele é apenas texto.
+CSV
+
+Abrindo o arquivo Json
+
+colchete [] - listas
+chaves {} - objeto
+entre aspas "" - string
+a senha esta aparecendo e precisa ser encriptografada ( embaralhada) , quando isto ocorre, significa que existe uma falha no sistema.
+
+Metodologia Ágil: entregar o sitema de forma mais rápida, previamente.
+
+Diferença de obj e stringify:
+
+Exemplo prático pelo console (f12) em uma página web
+
+Digite:
+
+const obj = { nome: 'ana', idade: 13}
+console.log(obj);
+{nome: 'ana', idade: 13}
+console.log(JSON.stringify(obj));
+{"nome":"ana","idade":13}
+const obj2 = JSON.parse('{"nome":"João"}');
+console.log(obj2.nome);
+resposta: João
+
+Pesquisar sobre if ternário em JS ""?" ..
+Crase - template string (string de modelo) Exemplo: `R$ ${parseFloat(item.preco).toFixed(2)}`;
+Aspas - concatenar Exemplo: "<B>" + item.tipo + ":</B>";
+
+
+
+
+
