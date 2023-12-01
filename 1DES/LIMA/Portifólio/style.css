@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #161b1e;
     height: 100vh;
@@ -22,6 +26,10 @@ body {
 
 .flex {
     display: flex;
+}
+
+.efeito-txt-topo,  .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-img-sobre, .efeito-txt-sobre {
+    visibility: hidden;
 }
 
 .btn-contato button {
@@ -83,7 +91,7 @@ header nav.menu-desktop ul li {
 }
 
 /* ESTILO DO MENU MOBILE */
-btn-abrir-menu i {
+.btn-abrir-menu i {
     color: #5d8aa8;
     font-size: 40px;
 }
@@ -95,7 +103,7 @@ btn-abrir-menu i {
     top: 0;
     right: 0;
     z-index: 99999;
-    width:0%;
+    width: 0%;
     overflow: hidden;
     transition: .5s;
 }
@@ -271,13 +279,13 @@ section.sobre .flex {
     transition: .2s;
 }
 
-/* ESTILO DO PORTIFÓLIO */
-section.portifólio {
+/* ESTILO DOS PROJETOS */
+section.projetos {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff3d;
 }
 
-section.portifólio .flex {
+section.projetos .flex {
     /* gap: 80px; */
     justify-content: space-around;
     margin-top: 60px;
@@ -369,6 +377,41 @@ form .btn-enviar input[type=submit] {
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #101026;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 45px;
+    color:#f5f5f5;
+    margin-bottom: 35px;
+}
+
+.paragrafo {
+    font-size: 20px;
+    color: #5d8aa8;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #101026;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    border-radius: 16px;
+
 }
 
 /* ESTILO DO RODAPÉ */

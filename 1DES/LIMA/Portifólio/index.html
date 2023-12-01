@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--FIM BOOTSTRAP ICONS-->
     <link rel="stylesheet" href="style.css">
+    <!--SCROLLREVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js" defer></script>
 
     <script src="menu.js" defer></script>
     <title>Portifólio Carla Mozena</title>
@@ -21,21 +24,21 @@
         <div class="interface">
             <div class="logo">
                 <a hef="#">
-                    <img src="images/beecountrylogo.png" alt="Logo Bee Country" width="150" height="150">
+                    <img src="images/beecountrylogo.png" alt="Logo Bee Country" width="100" height="100">
                 </a>
             </div><!--LOGO-->
        
         <nav class="menu-desktop">
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
             </ul>
         </nav>
 
-        <div class="btn-contato">
-            <a href="#">
+        <div class="btn-contato" id="contato">
+            <a href="#contato">
                 <button>Contato</button>
             </a>
         </div><!--btn-contato-->
@@ -51,11 +54,11 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         
@@ -68,10 +71,10 @@
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="inicio">
             <div class="interface">
                 <div class="flex">
-                    <div class="txt-topo-site">
+                    <div class="txt-topo-site efeito-txt-topo">
                         <h1>TRANSFORMANDO IDÉIAS EM ARTE<span>.</span></h1>
                         <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante,
                            funcionalidade intuitiva e otimização para resultados, estou pronta para criar os seus sonhos.</p>
@@ -83,7 +86,7 @@
                         </div>
                     </div><!--txt-topo-site-->
 
-                    <div class="img-topo-site">
+                    <div class="img-topo-site efeito-img-topo">
                         <img src="images/eu2.png" alt="Eu">
 
                     </div><!--img-topo-site-->
@@ -91,11 +94,11 @@
              </div><!--interface-->
         </section><!--topo-do-site-->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="título">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades1">
                         <i class="bi bi-house"></i>
                         <h3>Marcenaria</h3>
                         <p>Fabricamos kits em mdf nas espessuras de 3 até 9 mm e também em madeira pinus no estilo country e decorativo.
@@ -106,7 +109,7 @@
                             Tenha um recorte Bee Country e faça muita arte.</p>
                         </div><!--especialidades-box-->
 
-                        <div class="especialidades-box">
+                        <div class="especialidades-box efeito-especialidades2">
                             <i class="bi bi-cart"></i>
                             <h3>Loja online</h3>
                             <p>Olá, bem vindos ao Ateliê Bee Country.
@@ -114,7 +117,7 @@
                                 Estamos situados na cidade de Jaguariúna no interior de São Paulo.</p>
                             </div><!--especialidades-box-->
 
-                            <div class="especialidades-box">
+                            <div class="especialidades-box efeito-especialidades3">
                                 <i class="bi bi-youtube"></i>
                                 <h3>Youtube</h3>
                                 <p>Seja muito bem-vindo ao meu canal no YouTube! Aqui, você encontrará um mundo de conteúdo diversificado e envolvente. Meu objetivo é proporcionar entretenimento, 
@@ -125,20 +128,29 @@
             </div><!--interface-->
         </section><!--Especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
-                    <div class="img-sobre">
+                    <div class="img-sobre efeito-img-sobre">
                         <img src="images/beecountrylogo.png" alt="" width="320" height="400">
                     </div><!--img-sobre-->
 
-                    <div class="txt-sobre">
+                    <div class="txt-sobre efeito-txt-sobre">
                         <h2>MUITO PRAZER, <span> SOU CARLA MOZENA.</span></h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa optio tenetur dolorem expedita. 
-                        Soluta, a accusantium vero cupiditate quasi assumenda enim id, ipsam neque est ut sequi quod doloribus!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum perspiciatis delectus neque accusantium, 
-                        veritatis reprehenderit assumenda iure natus dolor sunt ducimus quia! Magnam voluptas est sapiente inventore,
-                        culpa at molestias?</p>
+                        <p>Apaixonada por desenhar desde os 5 anos de idade. Foi quando aos 18 anos decidi que queria entrar para este mundo das Artes cursando desenho Publicitário
+                            na extinta Escola Protec de São Paulo. Mas o que eu amava de verdade, era desenho animado. Foi quando tive a oportunidade de fazer um teste no Estúdio Maurício de Souza aos 19 anos.
+                            Infelizmente não passei no teste, mas isso não me impediu de seguir com meus sonhos e minha vocação. Em 2001, vim morar na cidade de Pedreira, interior de São Paulo, e me vi mais uma vez
+                            cercada pela arte. Passei a pintar para diversas lojas e expôr meus trabalhos em feiras locais. Mais tarde, em 2004 abri meu próprio negócio fundando o Ateliê Bee Country.
+                            Diante da necessidade de atender clientes e alunos com mais personalidade, montei minha própria marcenaria, onde aprendi o ofício por livre e "forçada" vontade, pois nesta época, o meu marceneiro particular
+                            havia me deixado na mão e eu precisava cumprir com os prazos de entrega de meus clientes e alunos. Foi aí que o ateliê passou a se chamar Ateliê e Marcenaria Bee Country.
+                            Não parei de me atualizar, e fiz diversos workshops com professores Nacionais e Internacionais. Desenvolvi minha própria didática e passei a ensinar minhas técnicas formando alunos do Brasil inteiro.
+                            Atualmente o Ateliê conta com mais de 1000 produtos expostos para inspirar e desenvolver suas habilidades criativas. Temos diversos produtos físicos e digitais, e atendemos clientes e alunos do Brasil todo e Exterior. 
+                            Desenhei para a empresa Litocart desenvolvendo produtos para o setor de decoupage e decoração e para a Empresa Arte em Cortes
+                            by Marcia Leite, colaboro na criação e desenvolvimento de peças em MDF e Stencil. 
+                            </p>
+                        <p>Minhas especialidades são as técnicas da Pintura Country Americana, Pintura Country Primitiva, Pintura Decorativa, Pintura Realista de animais , desenhista e marceneira.
+                            Para saber mais sobre o meu trabalho, clique nos ícones de minhas redes sociais logo aqui abaixo.
+                        </p>
                         <div class="btn-social">
                             <a href="https://www.instagram.com/carlamozena/"><button><i class="bi bi-instagram"></i></button></a>
                             <a href="https://www.youtube.com/carlamozena"><button><i class="bi bi-youtube"></i></button></a>
@@ -150,9 +162,9 @@
             </div><!--interface-->
         </section><!--sobre-->
 
-        <section class="portifólio">
+        <section class="projetos" id="projetos">
             <div class="interface">
-                <h2 class="título">MEU <span>PORTIFÓLIO.</span></h2>
+                <h2 class="título">MEUS <span>PROJETOS.</span></h2>
                 <div class="flex">
                     <div class="img-port" style="background-image: url(images/casinhas\ 1.jpg);">
                         <div class="overlay">Projeto 1</div>
@@ -171,12 +183,15 @@
             <div class="interface">
                 <h2 class="título">FALE <span>COMIGO.</span></h2>
 
-                <form action="">
+                <form action="https://api.staticforms.xyz/submit" method="post">
                     <input type="text" name="" id="" placeholder="Seu nome completo:" required>
                     <input type="text" name="" id="" placeholder="Seu e-mail:" required>
                     <input type="text" name="" id="" placeholder="Seu celular:">
                     <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+
+                    <input type="hidden" name="accessKey" value="5a787da5-1995-4978-bea8-0ea16c3bb331">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
                 </form>
             </div><!--interface-->
         </section><!--formulário-->
