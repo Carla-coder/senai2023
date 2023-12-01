@@ -37,7 +37,7 @@
             </ul>
         </nav>
 
-        <div class="btn-contato" id="contato">
+        <div class="btn-contato">
             <a href="#contato">
                 <button>Contato</button>
             </a>
@@ -80,7 +80,7 @@
                            funcionalidade intuitiva e otimização para resultados, estou pronta para criar os seus sonhos.</p>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#contato">
                                 <button>Entre em Contato</button>
                             </a>
                         </div>
@@ -179,19 +179,19 @@
             </div><!--interface-->
         </section><!--portifólio-->
 
-        <section class="formulario">
+        <section class="formulario" id="contato">
             <div class="interface">
                 <h2 class="título">FALE <span>COMIGO.</span></h2>
 
-                <form action="https://api.staticforms.xyz/submit" method="post">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu celular:">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <form action="https://formspree.io/f/mvojjlzn" method="post">
+                    <input type="text" name="name" id="name" placeholder="Seu nome completo:" required>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="telefone" name="telefone" id="telefone" placeholder="Seu celular:" required>
+                    <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
 
-                    <input type="hidden" name="accessKey" value="5a787da5-1995-4978-bea8-0ea16c3bb331">
-                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                    <!-- <input type="hidden" name="accessKey" value="5a787da5-1995-4978-bea8-0ea16c3bb331">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html"> -->
                 </form>
             </div><!--interface-->
         </section><!--formulário-->

@@ -379,7 +379,7 @@ form .btn-enviar input[type=submit] {
     transition: .2s;
 }
 
-.main {
+/* .main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -412,7 +412,7 @@ form .btn-enviar input[type=submit] {
 .btn:hover {
     border-radius: 16px;
 
-}
+} */
 
 /* ESTILO DO RODAPÉ */
 footer {
