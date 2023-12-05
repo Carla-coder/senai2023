@@ -41,7 +41,7 @@ function download() {
         a.click();
         alert("Dados salvos pasta padrão de downloads como [dados.json]")
     } else {
-        alert("Não há dados serem salvos.")
+        alert("Não há dados a serem salvos.")
     }
 }
 

@@ -1,0 +1,87 @@
+Prova Somativa de redes (HARE) 
+
+(1).Qual padrão de placa de rede é mais rápido?
+
+Fast Ethernet
+Ethernet
+Gigabit Ethernet
+
+(2).Qual o tipo de cabo mais utilizada em LANs atualmente?
+
+Fibra Ótica
+Coaxial
+Par Trançado
+
+(3).Qual o nome do conector mais utilizado em cabos de redes locais?
+
+P10
+RJ-45
+RJ-15
+
+(4).Qual a velocidade máxima alcançada por cabos pares trançados cat5e?
+
+10 Mbits
+1000 Mbits
+100 Mbits
+
+(5).Qual camada do modelo TCP/IP o padrão Ethernet se encontra
+
+Aplicação
+Transporte
+Internet
+Rede/Física
+
+(6).Marque as opções relacionadas
+
+                 Wi-Fi	  LAN	  WAN
+Wireless			
+Fibra Óptica			
+Par-Trançado			
+Wireless			
+Fibra Óptica			
+Par-Trançado
+
+(7).Marque as opções relacionadas
+
+        www.google.com.br	  01-00-5e-00-00-fb	   128 bits	    2 bits
+IPv4	
+IPv6	
+DNS	
+MAC	
+
+(8).Para transferência de arquivos via internet utilizamos qual serviço?
+
+FTP
+HTTP
+DNS
+
+(9).Para resolução de nomes em IPs utilizamos qual serviço?
+
+FTP
+HTTP
+DNS
+
+(10).Qual a porta mais utilizada pelo serviço de FTP
+
+80
+21
+8080
+
+(11).Relacione os temas sobre o protocolo TCP/IP
+
+                      Ethernet,RJ45,Keystone,Path Panel    HTTP, FTP, ISMTP, POP3	 DP, TCP	IP, ARP
+
+Camada de Rede	
+Camada de Aplicação	
+Camada de Transporte	
+Camada de Internet
+
+(12).Assinale a alternativa incorreta, sobre comandos de rede
+
+O comando cmd > arp -a mostra os endereços físicos dos dispositivos que trocaram pacotes.
+O comando cmd > ping faz testes de conexão com a rede tanto LAN quanto WAN
+O comando cmd > ipconfig /all não mostra o endereço físico do computador somente o IP
+O comando cmd > hostname mostra o nome de domínio do computador
+O comando cmd > tracert mostra a rota dos pacotes até o destino
+
+
