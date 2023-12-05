@@ -1,0 +1,290 @@
+{
+
+    "usuarios": [
+
+        {
+
+            "id": 1,
+            "nome": "Leticia Hofman",
+            "email": "leh@js.com",
+            "senha": "4321",
+            "cargo": "proprietária",
+            "tipo": "admin"
+
+        },
+
+        {
+
+            "id": 2,
+            "nome": "Carla Mozena",
+            "email": "carla@js.com",
+            "senha": "4321",
+            "cargo": "Atendente1",
+            "tipo": "comum"
+
+        },
+
+        {
+
+            "id": 3,
+            "nome": "Gabriella Avila",
+            "email": "gabi@js.com",
+            "senha": "4321",
+            "cargo": "Atendente2",
+            "tipo": "comum"
+
+        }
+
+    ],
+
+    "itens": [
+
+        {
+
+            "id": 1,
+            "nome": "Anel-Nature",
+            "descricao": "Anel em ouro 18K com diamantes",
+            "tipo": "Anel",
+            "img": "../assets/anel-n.webp",
+            "preco": 8250.0
+
+        },
+
+        {
+
+            "id": 2,
+            "nome": "Brinco-Sirena",
+            "descricao": "Brinco em ouro rose com topazios",
+            "tipo": "Brinco",
+            "img": "../assets/brinco-s.webp",
+            "preco": 18990.0
+
+        },
+
+        {
+
+            "id": 3,
+            "nome": "Colar-Nature",
+            "descricao": "Colar em ouro 18K com diamantes",
+            "tipo": "Colar",
+            "img": "../assets/colar-n.webp",
+            "preco": 89990.0
+
+        },
+
+        {
+
+            "id": 4,
+            "nome": "Anel-Sirena",
+            "descricao": "Anel em ouro roze 18K com topazios",
+            "tipo": "Anel",
+            "img": "../assets/anel-s.webp",
+            "preco": 4890.0
+
+        },
+
+        {
+
+            "id": 5,
+            "nome": "Pingente-Sirena",
+            "descricao": "Pingente em ouro rose 18K com topazios",
+            "tipo": "Pingente",
+            "img": "../assets/pingente-s.webp",
+            "preco": 990.0
+
+        },
+
+        {
+
+            "id": 6,
+            "nome": "Brinco-Ouro",
+            "descricao": "Brinco em ouro com diamantes",
+            "tipo": "Brinco",
+            "img": "../assets/brinco-o.webp",
+            "preco": 20390.0
+
+        }
+
+       
+    ],
+
+    "vendas": [
+
+        {
+
+            "id": 1,
+            "data": "2023-11-05T08:50:00.000Z",
+            "usuario": 2,
+            "item": 1,
+            "quantidade": 1,
+            "valorUnitario": 8250.0
+
+        },
+
+        {
+
+            "id": 2,
+            "data": "2023-11-05T09:35:00.000Z",
+            "usuario": 2,
+            "item": 2,
+            "quantidade": 1,
+            "valorUnitario": 18990.0
+
+        },
+
+        {
+
+            "id": 3,
+            "data": "2023-11-05T12:00:00.000Z",
+            "usuario": 2,
+            "item": 3,
+            "quantidade": 1,
+            "valorUnitario": 89990.0
+
+        },
+
+        {
+
+            "id": 4,
+            "data": "2023-11-05T08:50:00.000Z",
+            "usuario": 2,
+            "item": 6,
+            "quantidade": 1,
+            "valorUnitario": 4890.0
+
+        },
+
+        {
+
+            "id": 5,
+            "data": "2023-11-06T08:20:00.000Z",
+            "usuario": 3,
+            "item": 5,
+            "quantidade": 2,
+            "valorUnitario": 990.0
+
+        },
+
+        {
+
+            "id": 6,
+            "data": "2023-11-06T10:40:00.000Z",
+            "usuario": 3,
+            "item": 4,
+            "quantidade": 1,
+            "valorUnitario": 20390.0
+
+        },
+
+        {
+
+            "id": 7,
+            "data": "2023-11-06T11:50:00.000Z",
+            "usuario": 3,
+            "item": 4,
+            "quantidade": 2,
+            "valorUnitario": 19.9
+
+        },
+
+        {
+            "id": 8,
+            "data": "2023-11-06T12:50:00.000Z",
+            "usuario": 2,
+            "item": 6,
+            "quantidade": 1,
+            "valorUnitario": 159.9
+
+        },
+
+        {
+
+            "id": 9,
+            "data": "2023-11-07T08:50:00.000Z",
+            "usuario": 2,
+            "item": 7,
+            "quantidade": 1,
+            "valorUnitario": 59.9
+
+        },
+
+        {
+
+            "id": 10,
+            "data": "2023-11-07T10:20:00.000Z",
+            "usuario": 2,
+            "item": 2,
+            "quantidade": 1,
+            "valorUnitario": 49.9
+
+        },
+
+        {
+
+            "id": 11,
+            "data": "2023-11-07T10:45:00.000Z",
+            "usuario": 3,
+            "item": 1,
+            "quantidade": 2,
+            "valorUnitario": 29.9
+
+        },
+
+        {
+
+            "id": 12,
+            "data": "2023-11-07T11:05:00.000Z",
+            "usuario": 1,
+            "item": 3,
+            "quantidade": 1,
+            "valorUnitario": 49.9
+
+        },
+
+        {
+
+            "id": 13,
+            "data": "2023-11-07T13:50:00.000Z",
+            "usuario": 1,
+            "item": 4,
+            "quantidade": 1,
+            "valorUnitario": 19.9
+
+        },
+
+        {
+
+            "id": 14,
+            "data": "2023-11-07T08:14:00.000Z",
+            "usuario": 2,
+            "item": 5,
+            "quantidade": 1,
+            "valorUnitario": 24.9
+
+        },
+
+        {
+
+            "id": 15,
+            "data": "2023-11-07T15:50:00.000Z",
+            "usuario": 1,
+            "item": 6,
+            "quantidade": 1,
+            "valorUnitario": 159.9
+
+        },
+
+        {
+
+            "id": 16,
+            "data": "2023-11-07T16:20:00.000Z",
+            "usuario": 1,
+            "item": 7,
+            "quantidade": 1,
+            "valorUnitario": 59.9
+
+        }
+
+    ]
+
+}
