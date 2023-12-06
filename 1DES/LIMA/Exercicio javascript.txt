@@ -1,0 +1,146 @@
+exercicio 2
+
+let a= parseInt (prompt("inform uma velocidade"));
+40km/hr
+let a= parseInt (prompt("inform uma distancia"));
+100km/
+
+console.log('40km/hr:${100km}');    
+
+
+exercio 3
+let a= parseInt (prompt("informe um nome"));
+Vera
+let a= parseInt (prompt("informe um valor salario"));
+1.800
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="./script.js"></script>
+    
+</head>
+<body>
+
+
+javascript
+
+alert("Olá mundo");
+console.log("teste");
+console.log (parseInt("oi"));
+console.log (parseInt(oi));
+let a="10";
+console.log(a===10);
+console.log(a!==10);
+
+let opcao = prompt("1 a 3");
+
+switch(opcao){
+    case "1":
+        console.log("Escolheu a op.1");
+       break;
+    case "2":
+        console.log("Escolheu a op.2");
+        break;
+    case "3": 
+        console.log("Escolheu a op.3");
+        break;
+    default:
+        console.log("Opcao invalida");
+        break;
+}
+for(let i=1;i<=10;i++){
+    console.log(i);
+}
+let i=1;
+while(i<=10){
+    console.log(i);
+    i++;
+}
+let num=0;
+do{
+    let num=prompt("diferente 10");
+    console.log(num);
+    }while(num)! = 10;
+
+    alert("Olá mundo");
+console.log("teste");
+console.log (parseInt("oi"));
+console.log (parseInt(oi));
+a="10";
+console.log(a===10);
+console.log(a!===10);
+
+opcao = prompt("1 a 3");
+switch(opcao){
+    case "1":
+        console.log("Escolheu a op.1");
+       break;
+    case "2":
+        console.log("Escolheu a op.2");
+        break;
+    case "3": 
+        console.log("Escolheu a op.3");
+        break;
+    default:
+        console.log("Opcao invalida");
+        break;
+}
+for(let i=1;i<=10;i++){
+    console.log(i);
+}
+ i=1;
+while(i<=10){
+    console.log(i);
+    i++;
+}
+ num = 0;
+do{
+    let num=prompt("diferente 10");
+    console.log(num);
+    }while(num)! =10;
+
+    let nomes=["fulano1","ciclano2","beltrano3"]
+    for (let i=0;i<=nomes.length;i++){
+ console.log(nomes[i]);
+    }
+
+ nomes=["fulano1","ciclano2","beltrano3"]
+    let busca=prompt(...);
+    for (let i=0;i<=nomes.length;i++){
+        if (busca==nomes)[i] alert("Nome localizado");
+
+    }
+function  somar(a,b){
+let res=a=b;
+return res;
+
+
+    }
+console.log  (somar(5+2));
+        let res=5+2;      =7
+        return res; 
+
+        console.log  (somar(5+"2"));    =52
+         res=5+2;
+        return res; 
+
+console.log  (somar(5+"a"));   =
+         res=5+2;
+        return res; 
+
+
+
+
+
+
+  
+</html>
+
+
