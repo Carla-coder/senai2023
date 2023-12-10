@@ -6,6 +6,6 @@ Visto hoje no exercicio: Power Query/ Power Pivot/ Dax- LookValue (Val, PK, Fore
                                                       - Related (val)
 													  
 
-Análise de Dados: Estrela: transformo o Fato ( centro da estrela ) e separa em Dimensões ( ponta da estrela )
+Análise de Dados: Estrela: transforma o Fato ( centro da estrela ) e separa em Dimensões ( ponta da estrela )
 				  Floco de Neve: separar
 													  
