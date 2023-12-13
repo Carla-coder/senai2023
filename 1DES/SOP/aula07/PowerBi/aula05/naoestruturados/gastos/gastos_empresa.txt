@@ -1,6 +1,6 @@
 Gastos 2016 XYZ Corporation
 
-Categoria	Data		Quantidade
+			Quantidade
 Acomodação	12/04/2016	R$ 247,20
 	01/02/2016	R$ 34,62
 	08/07/2016	R$ 367,89
