@@ -2,9 +2,9 @@
 
 ### Repositório com exercícios, resumos, provas, tarefas e explicações das aulas do curso de Desenvolvimento de Sistemas na Escola Senai - Jaguariúna-SP
 
-Início do semestre - 18 de Julho
+**Início do semestre**: 18 de Julho
 
-Término do semestre - 19 de Dezembro
+**Término do semestre**: 19 de Dezembro
 
-Situação: Aluna Destaque Prata
+**Situação**: Aluna Destaque Prata
 
