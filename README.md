@@ -6,5 +6,5 @@
 
 **Término do semestre**: 19 de Dezembro
 
-**Situação**: Aprovada - Aluna Destaque Prata
+**Situação**: APROVADA - Aluna Destaque Prata
 
